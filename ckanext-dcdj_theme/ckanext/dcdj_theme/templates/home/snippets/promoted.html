@@ -1,0 +1,20 @@
+{% set intro = g.site_intro_text %}
+
+<div class="module-content box">
+  <header>
+    {% if intro %}
+      {{ h.render_markdown(intro) }}
+    {% else %}
+      <h1 class="page-heading">{{ _("Des Chiffres et Des Jeunes (DCDJ)") }}</h1>
+      <p>
+        {% trans %}
+        Des Chiffres et Des Jeunes (DCDJ) est un projet du programme DCLI (Data Collaboratives for Local Impact) piloté par le MCC (Millennium Challenge Corporation) et financé par le PEPFAR (President’s Emergency Plan For Aids Relief).
+        DCDJ est un projet phare de ce programme et le premier projet du genre dans la sous-région. DCDJ est basé sur la démultiplication des compétences et ressources nécessaires à la révolution des données dans des domaines comme la Santé, le Genre, la Croissance Economique et l'Education.
+        {% endtrans %}
+      </p>
+    {% endif %}
+  </header>
+
+  {% block home_image %}
+  {% endblock %}
+</div>

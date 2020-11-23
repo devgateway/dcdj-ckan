@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* =====================================================
+   The "account masthead" bar across the top of the site
+   ===================================================== */
+
+.account-masthead {
+    background-color: #328e48;
+}
+/* The "bubble" containing the number of new notifications. */
+.account-masthead .account .notifications a span {
+  background-color: black;
+}
+/* The text and icons in the user account info. */
+.account-masthead .account ul li a {
+  color: rgba(255, 255, 255);
+}
+
+/* The text and icons in the user account info. */
+.social_media a {
+  color: rgba(255, 255, 255);
+}
+
+/* The user account info text and icons, when the user's pointer is hovering
+   over them. */
+.account-masthead .account ul li a:hover {
+  color: rgba(255, 255, 255);
+  background-color: black;
+}
+
+.country-logo IMG {
+  height:60px;
+}
+
+.masthead .logo img {
+    height:80px;
+}
+
+.central {
+  padding-left: 80px !important;
+}
+
+
+.category-list UL
+{
+  columns: 2;
+}
+
+.item-list {
+  list-style-type: none;
+  padding-left: 3px;
+}
+
+.attribution {
+  font-size: 8pt;
+}
+
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+}
+.site-gouv {
+    margin: 5px 0;
+    padding: 10px 0;
+    overflow: hidden;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+}
+
+.site-gouv, .site-gouv li a {
+    display: block;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.list-center LI, ul.list-menu-btn {
+    display: inline-block;
+}
+
+/* ========================================================================
+   The main masthead bar that contains the site logo, nav links, and search
+   ======================================================================== */
+
+.masthead {
+  background-color: #fff;
+}
+.masthead .navigation .nav li a {
+  color: #3c3c3c;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 1.71429em;
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+/* The "navigation pills" in the masthead (the links to Datasets,
+   Organizations, etc) when the user's pointer hovers over them. */
+.masthead .navigation .nav-pills li a:hover {
+  background-color: #fff;
+  color: black;
+  border-bottom: 3px solid #f17550;
+}
+/* The "active" navigation pill (for example, when you're on the /dataset page
+   the "Datasets" link is active). */
+.masthead .navigation .nav-pills li.active a {
+  background-color: #fff;
+  color: black;
+}
+/* The "box shadow" effect that appears around the search box when it
+   has the keyboard cursor's focus. */
+.masthead input[type="text"]:focus {
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+.masthead .logo {
+  width:187px;
+  padding-top: 8px;
+}
+/* ===========================================
+   The content in the middle of the front page
+   =========================================== */
+
+/* Remove the "box shadow" effect around various boxes on the page. */
+.box {
+  box-shadow: none;
+}
+/* Remove the borders around the "Welcome to CKAN" and "Search Your Data"
+   boxes. */
+.hero .box {
+  border: none;
+}
+/* Change the colors of the "Search Your Data" box. */
+.homepage .module-search .module-content {
+  color: rgb(68, 68, 68);
+  background-color: white;
+}
+/* Change the background color of the "Popular Tags" box. */
+.homepage .module-search .tags {
+  background-color: rgb(61, 61, 61);
+}
+/* Remove some padding. This makes the bottom edges of the "Welcome to CKAN"
+   and "Search Your Data" boxes line up. */
+.module-content:last-child {
+  padding-bottom: 10px;
+}
+.homepage .module-search {
+  padding: 0px;
+}
+/* Add a border line between the top and bottom halves of the front page. */
+.homepage [role="main"] {
+  border-top: 1px solid rgb(204, 204, 204);
+}
+[role=main] {
+    min-height: 250px;
+}
+
+.homepage.layout-1 .row1 .col2 {
+    position: relative;
+    right: 0;
+    bottom:unset;
+}
+
+/* ====================================
+   The footer at the bottom of the site
+   ==================================== */
+
+.site-footer,
+body {
+  background-color: rgb(40, 40, 40);
+}
+/* The text in the footer. */
+.site-footer,
+.site-footer label,
+.site-footer small {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* The link texts in the footer. */
+.site-footer a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(background_home.jpg);
+    background-size: cover;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.module-content {
+    padding: 10px 20px 10px 20px;
+}
+
+.box {
+  background-color:rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+.form-control {
+  border-color: #f17550;
+  border-width: 2px;
+}
+
+i.fa-search {
+    color:#f17550;
+}
+
+.homepage .module-search {
+  background-color:c
+}
+
+h1.page-heading {
+  font-family: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(146, 146, 146);
+  border-bottom: 3px solid #f17550;
+
+}
+
+.box p {
+  font-family: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(146, 146, 146);
+}
+
+.homepage .module-search .module-content .heading {
+  font-family: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(146, 146, 146);
+}
+
+.site-footer {
+  font-family: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color:white;
+  background-color:#143A20;
+}

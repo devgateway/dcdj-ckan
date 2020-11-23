@@ -1,0 +1,16 @@
+{% ckan_extends %}
+
+{% block social_media %}
+<span class="social_media">
+  &nbsp;&nbsp;<a href="https://www.facebook.com/DCDJCI/" class="fa fa-facebook-official fa-2x" aria-hidden="true"></a>&nbsp;
+  <a href="https://twitter.com/DCDJCI" class="fa fa-twitter-square fa-2x" aria-hidden="true"></a>
+</span>
+{% endblock %}
+
+{% block header_logo %}
+  <a class="logo" href="{{ h.url_for('home.index') }}"><img src="{{ h.url_for_static_or_external('logo.svg') }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a>
+{% endblock %}
+
+{% block header_country_logo %}
+  <img src="{{ h.url_for_static_or_external('country.png') }}" alt="{{ g.site_title }}" title="Côte d'Ivoire" /></a>
+{% endblock %}

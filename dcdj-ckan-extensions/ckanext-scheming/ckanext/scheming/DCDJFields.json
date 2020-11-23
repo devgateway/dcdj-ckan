@@ -1,0 +1,4810 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "dataset",
+  "about": "A reimplementation of the default CKAN dataset schema",
+  "about_url": "http://github.com/ckan/ckanext-scheming",
+  "dataset_fields": [
+    {
+      "field_name": "title",
+      "label": "Title",
+      "preset": "title",
+      "form_placeholder": "eg. A descriptive title"
+    },
+    {
+      "field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": "eg. my-dataset"
+    },
+    {
+      "field_name": "acronym",
+      "label": "Accronyme",
+      "help_text": "Accronyme du jeu de données (Abréviation du nom de jeu de donnée)",
+      "required": "true",
+      "form_placeholder": "Acronym"
+    },
+    {
+      "field_name": "sectors",
+      "label": "Secteurs",
+      "help_text": "Liste des secteurs couverts par la base de données (en menu déroulant) Santé, Environnement, Agriculture, etc). Maintenez la touche Ctrl enfoncée pour effectuer une sélection multiple.",
+      "preset": "multiple_select",
+      "required": "true",
+      "choices": [
+        {
+          "value": "Abris et Soins",
+          "label": "Abris et Soins"
+        },
+        {
+          "value": "Alimentation et Nutrition",
+          "label": "Alimentation et Nutrition"
+        },
+        {
+          "value": "Droit",
+          "label": "Droit"
+        },
+        {
+          "value": "Economie",
+          "label": "Economie"
+        },
+        {
+          "value": "Education",
+          "label": "Education"
+        },
+        {
+          "value": "Environnement",
+          "label": "Environnement"
+        },
+        {
+          "value": "Genre",
+          "label": "Genre"
+        },
+        {
+          "value": "Geographie",
+          "label": "Geographie"
+        },
+        {
+          "value": "Nutrition",
+          "label": "Nutrition"
+        },
+        {
+          "value": "Pauvreté",
+          "label": "Pauvreté"
+        },
+        {
+          "value": "Phychosocial",
+          "label": "Phychosocial"
+        },
+        {
+          "value": "Protection",
+          "label": "Protection"
+        },
+        {
+          "value": "Renforcement Economique",
+          "label": "Renforcement Economique"
+        },
+        {
+          "value": "Santé",
+          "label": "Santé"
+        },
+        {
+          "value": "Securite",
+          "label": "Securite"
+        },
+        {
+          "value": "Socio-démographie",
+          "label": "Socio-démographie"
+        }
+      ]
+    },
+    {
+      "field_name": "geographic_coverage",
+      "label": "Couverture géographique (1)",
+      "help_text": "Si région, district ou commune ou quartier, nommer les localités couvertes. Maintenez la touche Ctrl enfoncée pour effectuer une sélection multiple.",
+      "preset": "multiple_select",
+      "choices": [
+        {
+          "value": "country",
+          "label": "Pays"
+        },
+        {
+          "value": "region",
+          "label": "Region"
+        },
+        {
+          "value": "district",
+          "label": "District"
+        }
+      ]
+    },
+    {
+      "field_name": "geographic_location",
+      "label": "Couverture géographique (2) ",
+      "help_text": "Si région, district ou commune ou quartier, nommer les localités couvertes. Maintenez la touche Ctrl enfoncée pour effectuer une sélection multiple.",
+      "preset": "multiple_select",
+      "choices": [
+        {
+          "value": "Cote d'Ivoire",
+          "label": "Cote d'Ivoire"
+        },
+        {
+          "value": "ABIDJAN",
+          "label": "Cote d'Ivoire->ABIDJAN"
+        },
+        {
+          "value": "ABIDJAN",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN"
+        },
+        {
+          "value": "ABIDJAN",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->ABIDJAN"
+        },
+        {
+          "value": "Abobo",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->ABIDJAN->Abobo"
+        },
+        {
+          "value": "Adjame",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->ABIDJAN->Adjame"
+        },
+        {
+          "value": "Attecoube",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->ABIDJAN->Attecoube"
+        },
+        {
+          "value": "Cocody",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->ABIDJAN->Cocody"
+        },
+        {
+          "value": "Koumassi",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->ABIDJAN->Koumassi"
+        },
+        {
+          "value": "Marcory",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->ABIDJAN->Marcory"
+        },
+        {
+          "value": "Plateau",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->ABIDJAN->Plateau"
+        },
+        {
+          "value": "Port-Bouet",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->ABIDJAN->Port-Bouet"
+        },
+        {
+          "value": "Treichville",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->ABIDJAN->Treichville"
+        },
+        {
+          "value": "Yopougon",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->ABIDJAN->Yopougon"
+        },
+        {
+          "value": "Abobo",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Abobo"
+        },
+        {
+          "value": "Adjamé",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Adjamé"
+        },
+        {
+          "value": "Anyama",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Anyama"
+        },
+        {
+          "value": "Anyama",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Anyama->Anyama"
+        },
+        {
+          "value": "Attécoubé",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Attécoubé"
+        },
+        {
+          "value": "BROFODOUME",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->BROFODOUME"
+        },
+        {
+          "value": "Bingerville",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Bingerville"
+        },
+        {
+          "value": "Bingerville",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Bingerville->Bingerville"
+        },
+        {
+          "value": "Cocody",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Cocody"
+        },
+        {
+          "value": "Koumassi",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Koumassi"
+        },
+        {
+          "value": "Marcory",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Marcory"
+        },
+        {
+          "value": "Plateau",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Plateau"
+        },
+        {
+          "value": "Port-Bouet",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Port-Bouet"
+        },
+        {
+          "value": "Songon",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Songon"
+        },
+        {
+          "value": "Songon",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Songon->Songon"
+        },
+        {
+          "value": "Treichville",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Treichville"
+        },
+        {
+          "value": "Yopougon",
+          "label": "Cote d'Ivoire->ABIDJAN->ABIDJAN->Yopougon"
+        },
+        {
+          "value": "ABOISSO",
+          "label": "Cote d'Ivoire->ABIDJAN->ABOISSO"
+        },
+        {
+          "value": "Aboude",
+          "label": "Cote d'Ivoire->ABIDJAN->ABOISSO->Aboude"
+        },
+        {
+          "value": "Ananguie",
+          "label": "Cote d'Ivoire->ABIDJAN->ABOISSO->Ananguie"
+        },
+        {
+          "value": "Mahandougou",
+          "label": "Cote d'Ivoire->ABIDJAN->ABOISSO->Mahandougou"
+        },
+        {
+          "value": "N'Douci",
+          "label": "Cote d'Ivoire->ABIDJAN->ABOISSO->N'Douci"
+        },
+        {
+          "value": "Niokosso",
+          "label": "Cote d'Ivoire->ABIDJAN->ABOISSO->Niokosso"
+        },
+        {
+          "value": "AGNEBY-TIASSA",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA"
+        },
+        {
+          "value": "AGBOVILLE",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE"
+        },
+        {
+          "value": "ABOUDE",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->ABOUDE"
+        },
+        {
+          "value": "ANANGUIE",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->ANANGUIE"
+        },
+        {
+          "value": "ATTOBROU",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->ATTOBROU"
+        },
+        {
+          "value": "Agboville",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->Agboville"
+        },
+        {
+          "value": "Agboville",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->Agboville->Agboville"
+        },
+        {
+          "value": "Azaguié",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->Azaguié"
+        },
+        {
+          "value": "Azaguie",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->Azaguié->Azaguie"
+        },
+        {
+          "value": "Bogofa",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->Bogofa"
+        },
+        {
+          "value": "CECHI",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->CECHI"
+        },
+        {
+          "value": "CECHI",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->CECHI"
+        },
+        {
+          "value": "CECHI SP",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->CECHI SP"
+        },
+        {
+          "value": "GRAND-MORIE",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->GRAND-MORIE"
+        },
+        {
+          "value": "GRAND-MORIE",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->GRAND-MORIE"
+        },
+        {
+          "value": "GUESSIGUE",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->GUESSIGUE"
+        },
+        {
+          "value": "GUESSIGUIE",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->GUESSIGUIE"
+        },
+        {
+          "value": "Kakpin",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->Kakpin"
+        },
+        {
+          "value": "LOVIGUIE",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->LOVIGUIE"
+        },
+        {
+          "value": "LOVIGUIE",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->LOVIGUIE"
+        },
+        {
+          "value": "ORESS-KROBOU",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->ORESS-KROBOU"
+        },
+        {
+          "value": "ORESS-KROBOU",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->ORESS-KROBOU"
+        },
+        {
+          "value": "Rubino",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->Rubino"
+        },
+        {
+          "value": "Rubino",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->Rubino"
+        },
+        {
+          "value": "Rubino",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->Rubino->Rubino"
+        },
+        {
+          "value": "Rubino",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->AGBOVILLE->Rubino->Rubino"
+        },
+        {
+          "value": "SIKENSI",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->SIKENSI"
+        },
+        {
+          "value": "GOMON",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->SIKENSI->GOMON"
+        },
+        {
+          "value": "Sikensi",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->SIKENSI->Sikensi"
+        },
+        {
+          "value": "Sikensi",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->SIKENSI->Sikensi->Sikensi"
+        },
+        {
+          "value": "TAABO",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->TAABO"
+        },
+        {
+          "value": "PACOBO",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->TAABO->PACOBO"
+        },
+        {
+          "value": "Taabo",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->TAABO->Taabo"
+        },
+        {
+          "value": "Taabo",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->TAABO->Taabo->Taabo"
+        },
+        {
+          "value": "TIASSALE",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->TIASSALE"
+        },
+        {
+          "value": "GBOLOUVILLE",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->TIASSALE->GBOLOUVILLE"
+        },
+        {
+          "value": "MOROKRO",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->TIASSALE->MOROKRO"
+        },
+        {
+          "value": "N'DOUCI",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->TIASSALE->N'DOUCI"
+        },
+        {
+          "value": "Noe",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->TIASSALE->Noe"
+        },
+        {
+          "value": "Tiassalé",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->TIASSALE->Tiassalé"
+        },
+        {
+          "value": "Tiassale",
+          "label": "Cote d'Ivoire->AGNEBY-TIASSA->TIASSALE->Tiassalé->Tiassale"
+        },
+        {
+          "value": "BAFING",
+          "label": "Cote d'Ivoire->BAFING"
+        },
+        {
+          "value": "KORO",
+          "label": "Cote d'Ivoire->BAFING->KORO"
+        },
+        {
+          "value": "Annepe",
+          "label": "Cote d'Ivoire->BAFING->KORO->Annepe"
+        },
+        {
+          "value": "Assikoi",
+          "label": "Cote d'Ivoire->BAFING->KORO->Assikoi"
+        },
+        {
+          "value": "Booko",
+          "label": "Cote d'Ivoire->BAFING->KORO->Booko"
+        },
+        {
+          "value": "Booko",
+          "label": "Cote d'Ivoire->BAFING->KORO->Booko->Booko"
+        },
+        {
+          "value": "Borotou",
+          "label": "Cote d'Ivoire->BAFING->KORO->Borotou"
+        },
+        {
+          "value": "Borotou",
+          "label": "Cote d'Ivoire->BAFING->KORO->Borotou->Borotou"
+        },
+        {
+          "value": "Koro",
+          "label": "Cote d'Ivoire->BAFING->KORO->Koro"
+        },
+        {
+          "value": "Koro",
+          "label": "Cote d'Ivoire->BAFING->KORO->Koro->Koro"
+        },
+        {
+          "value": "MAHANDOUGOU",
+          "label": "Cote d'Ivoire->BAFING->KORO->MAHANDOUGOU"
+        },
+        {
+          "value": "NIOKOSSO",
+          "label": "Cote d'Ivoire->BAFING->KORO->NIOKOSSO"
+        },
+        {
+          "value": "OUANINOU",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU"
+        },
+        {
+          "value": "Begbessou",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->Begbessou"
+        },
+        {
+          "value": "GBELO",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->GBELO"
+        },
+        {
+          "value": "GOUEKAN",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->GOUEKAN"
+        },
+        {
+          "value": "Gohitafla",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->Gohitafla"
+        },
+        {
+          "value": "Kanzra",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->Kanzra"
+        },
+        {
+          "value": "Koonan",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->Koonan"
+        },
+        {
+          "value": "Koonan",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->Koonan->Koonan"
+        },
+        {
+          "value": "Maminigui",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->Maminigui"
+        },
+        {
+          "value": "Ouaninou",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->Ouaninou"
+        },
+        {
+          "value": "Ouaninou",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->Ouaninou->Ouaninou"
+        },
+        {
+          "value": "SABOUDOUGOU",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->SABOUDOUGOU"
+        },
+        {
+          "value": "SANTA",
+          "label": "Cote d'Ivoire->BAFING->OUANINOU->SANTA"
+        },
+        {
+          "value": "TOUBA",
+          "label": "Cote d'Ivoire->BAFING->TOUBA"
+        },
+        {
+          "value": "Adiake",
+          "label": "Cote d'Ivoire->BAFING->TOUBA->Adiake"
+        },
+        {
+          "value": "DIOMAN",
+          "label": "Cote d'Ivoire->BAFING->TOUBA->DIOMAN"
+        },
+        {
+          "value": "FOUNGBESSO",
+          "label": "Cote d'Ivoire->BAFING->TOUBA->FOUNGBESSO"
+        },
+        {
+          "value": "Foungbesso",
+          "label": "Cote d'Ivoire->BAFING->TOUBA->FOUNGBESSO->Foungbesso"
+        },
+        {
+          "value": "Guintéguela",
+          "label": "Cote d'Ivoire->BAFING->TOUBA->Guintéguela"
+        },
+        {
+          "value": "Guinteguela",
+          "label": "Cote d'Ivoire->BAFING->TOUBA->Guintéguela->Guinteguela"
+        },
+        {
+          "value": "Touba",
+          "label": "Cote d'Ivoire->BAFING->TOUBA->Touba"
+        },
+        {
+          "value": "Touba",
+          "label": "Cote d'Ivoire->BAFING->TOUBA->Touba->Touba"
+        },
+        {
+          "value": "BAGOUE",
+          "label": "Cote d'Ivoire->BAGOUE"
+        },
+        {
+          "value": "BOUNDIALI",
+          "label": "Cote d'Ivoire->BAGOUE->BOUNDIALI"
+        },
+        {
+          "value": "BAYA",
+          "label": "Cote d'Ivoire->BAGOUE->BOUNDIALI->BAYA"
+        },
+        {
+          "value": "Boundiali",
+          "label": "Cote d'Ivoire->BAGOUE->BOUNDIALI->Boundiali"
+        },
+        {
+          "value": "Boundiali",
+          "label": "Cote d'Ivoire->BAGOUE->BOUNDIALI->Boundiali->Boundiali"
+        },
+        {
+          "value": "GONAONI",
+          "label": "Cote d'Ivoire->BAGOUE->BOUNDIALI->GONAONI"
+        },
+        {
+          "value": "Gnagbodougnoa",
+          "label": "Cote d'Ivoire->BAGOUE->BOUNDIALI->Gnagbodougnoa"
+        },
+        {
+          "value": "Kasséré",
+          "label": "Cote d'Ivoire->BAGOUE->BOUNDIALI->Kasséré"
+        },
+        {
+          "value": "Kassere",
+          "label": "Cote d'Ivoire->BAGOUE->BOUNDIALI->Kasséré->Kassere"
+        },
+        {
+          "value": "SIEMPURGO",
+          "label": "Cote d'Ivoire->BAGOUE->BOUNDIALI->SIEMPURGO"
+        },
+        {
+          "value": "KOUTO",
+          "label": "Cote d'Ivoire->BAGOUE->KOUTO"
+        },
+        {
+          "value": "BLESSEGUE",
+          "label": "Cote d'Ivoire->BAGOUE->KOUTO->BLESSEGUE"
+        },
+        {
+          "value": "Gbon",
+          "label": "Cote d'Ivoire->BAGOUE->KOUTO->Gbon"
+        },
+        {
+          "value": "Gbon",
+          "label": "Cote d'Ivoire->BAGOUE->KOUTO->Gbon->Gbon"
+        },
+        {
+          "value": "Kolia",
+          "label": "Cote d'Ivoire->BAGOUE->KOUTO->Kolia"
+        },
+        {
+          "value": "Kolia",
+          "label": "Cote d'Ivoire->BAGOUE->KOUTO->Kolia->Kolia"
+        },
+        {
+          "value": "Kouto",
+          "label": "Cote d'Ivoire->BAGOUE->KOUTO->Kouto"
+        },
+        {
+          "value": "Kouto",
+          "label": "Cote d'Ivoire->BAGOUE->KOUTO->Kouto->Kouto"
+        },
+        {
+          "value": "SIANHALA",
+          "label": "Cote d'Ivoire->BAGOUE->KOUTO->SIANHALA"
+        },
+        {
+          "value": "Zego",
+          "label": "Cote d'Ivoire->BAGOUE->KOUTO->Zego"
+        },
+        {
+          "value": "TENGRELA",
+          "label": "Cote d'Ivoire->BAGOUE->TENGRELA"
+        },
+        {
+          "value": "Ayame",
+          "label": "Cote d'Ivoire->BAGOUE->TENGRELA->Ayame"
+        },
+        {
+          "value": "DEBETE",
+          "label": "Cote d'Ivoire->BAGOUE->TENGRELA->DEBETE"
+        },
+        {
+          "value": "KANAKORO",
+          "label": "Cote d'Ivoire->BAGOUE->TENGRELA->KANAKORO"
+        },
+        {
+          "value": "Kanakoro",
+          "label": "Cote d'Ivoire->BAGOUE->TENGRELA->KANAKORO->Kanakoro"
+        },
+        {
+          "value": "Mafere",
+          "label": "Cote d'Ivoire->BAGOUE->TENGRELA->Mafere"
+        },
+        {
+          "value": "PAPARA",
+          "label": "Cote d'Ivoire->BAGOUE->TENGRELA->PAPARA"
+        },
+        {
+          "value": "Tengréla",
+          "label": "Cote d'Ivoire->BAGOUE->TENGRELA->Tengréla"
+        },
+        {
+          "value": "Tengrela",
+          "label": "Cote d'Ivoire->BAGOUE->TENGRELA->Tengréla->Tengrela"
+        },
+        {
+          "value": "BELIER",
+          "label": "Cote d'Ivoire->BELIER"
+        },
+        {
+          "value": "ATTIEGOUAKRO",
+          "label": "Cote d'Ivoire->BELIER->ATTIEGOUAKRO"
+        },
+        {
+          "value": "ATTIEGOUAKRO",
+          "label": "Cote d'Ivoire->BELIER->ATTIEGOUAKRO->ATTIEGOUAKRO"
+        },
+        {
+          "value": "Attiegouakro",
+          "label": "Cote d'Ivoire->BELIER->ATTIEGOUAKRO->ATTIEGOUAKRO->Attiegouakro"
+        },
+        {
+          "value": "LOLOBO",
+          "label": "Cote d'Ivoire->BELIER->ATTIEGOUAKRO->LOLOBO"
+        },
+        {
+          "value": "DIDIEVI",
+          "label": "Cote d'Ivoire->BELIER->DIDIEVI"
+        },
+        {
+          "value": "BOLI",
+          "label": "Cote d'Ivoire->BELIER->DIDIEVI->BOLI"
+        },
+        {
+          "value": "Didiévi",
+          "label": "Cote d'Ivoire->BELIER->DIDIEVI->Didiévi"
+        },
+        {
+          "value": "Didievi",
+          "label": "Cote d'Ivoire->BELIER->DIDIEVI->Didiévi->Didievi"
+        },
+        {
+          "value": "Kouassi-Datekro",
+          "label": "Cote d'Ivoire->BELIER->DIDIEVI->Kouassi-Datekro"
+        },
+        {
+          "value": "MOLONOU-BLE",
+          "label": "Cote d'Ivoire->BELIER->DIDIEVI->MOLONOU-BLE"
+        },
+        {
+          "value": "RAVIART",
+          "label": "Cote d'Ivoire->BELIER->DIDIEVI->RAVIART"
+        },
+        {
+          "value": "Tié-Ndiékro",
+          "label": "Cote d'Ivoire->BELIER->DIDIEVI->Tié-Ndiékro"
+        },
+        {
+          "value": "Tie-Ndekro",
+          "label": "Cote d'Ivoire->BELIER->DIDIEVI->Tié-Ndiékro->Tie-Ndekro"
+        },
+        {
+          "value": "DJEKANOU",
+          "label": "Cote d'Ivoire->BELIER->DJEKANOU"
+        },
+        {
+          "value": "BONIKRO",
+          "label": "Cote d'Ivoire->BELIER->DJEKANOU->BONIKRO"
+        },
+        {
+          "value": "Djékanou",
+          "label": "Cote d'Ivoire->BELIER->DJEKANOU->Djékanou"
+        },
+        {
+          "value": "Djekanou",
+          "label": "Cote d'Ivoire->BELIER->DJEKANOU->Djékanou->Djekanou"
+        },
+        {
+          "value": "TIEBISSOU",
+          "label": "Cote d'Ivoire->BELIER->TIEBISSOU"
+        },
+        {
+          "value": "LOMOKANKRO",
+          "label": "Cote d'Ivoire->BELIER->TIEBISSOU->LOMOKANKRO"
+        },
+        {
+          "value": "MOLONOU",
+          "label": "Cote d'Ivoire->BELIER->TIEBISSOU->MOLONOU"
+        },
+        {
+          "value": "Tiébissou",
+          "label": "Cote d'Ivoire->BELIER->TIEBISSOU->Tiébissou"
+        },
+        {
+          "value": "Tiebissou",
+          "label": "Cote d'Ivoire->BELIER->TIEBISSOU->Tiébissou->Tiebissou"
+        },
+        {
+          "value": "YAKPABO-SAKASSOU",
+          "label": "Cote d'Ivoire->BELIER->TIEBISSOU->YAKPABO-SAKASSOU"
+        },
+        {
+          "value": "TOUMODI",
+          "label": "Cote d'Ivoire->BELIER->TOUMODI"
+        },
+        {
+          "value": "ANGODA",
+          "label": "Cote d'Ivoire->BELIER->TOUMODI->ANGODA"
+        },
+        {
+          "value": "Ettueboue",
+          "label": "Cote d'Ivoire->BELIER->TOUMODI->Ettueboue"
+        },
+        {
+          "value": "KPOUEBO",
+          "label": "Cote d'Ivoire->BELIER->TOUMODI->KPOUEBO"
+        },
+        {
+          "value": "Kokumbo",
+          "label": "Cote d'Ivoire->BELIER->TOUMODI->Kokumbo"
+        },
+        {
+          "value": "Kokumbo",
+          "label": "Cote d'Ivoire->BELIER->TOUMODI->Kokumbo->Kokumbo"
+        },
+        {
+          "value": "Toumodi",
+          "label": "Cote d'Ivoire->BELIER->TOUMODI->Toumodi"
+        },
+        {
+          "value": "Toumodi",
+          "label": "Cote d'Ivoire->BELIER->TOUMODI->Toumodi->Toumodi"
+        },
+        {
+          "value": "YAMOUSSOKRO",
+          "label": "Cote d'Ivoire->BELIER->YAMOUSSOKRO"
+        },
+        {
+          "value": "KOSSOU",
+          "label": "Cote d'Ivoire->BELIER->YAMOUSSOKRO->KOSSOU"
+        },
+        {
+          "value": "YAMOUSSOKRO",
+          "label": "Cote d'Ivoire->BELIER->YAMOUSSOKRO->YAMOUSSOKRO"
+        },
+        {
+          "value": "Yamoussokro",
+          "label": "Cote d'Ivoire->BELIER->YAMOUSSOKRO->YAMOUSSOKRO->Yamoussokro"
+        },
+        {
+          "value": "BERE",
+          "label": "Cote d'Ivoire->BERE"
+        },
+        {
+          "value": "DIANRA",
+          "label": "Cote d'Ivoire->BERE->DIANRA"
+        },
+        {
+          "value": "DIANRA-VILLAGE",
+          "label": "Cote d'Ivoire->BERE->DIANRA->DIANRA-VILLAGE"
+        },
+        {
+          "value": "Dianra",
+          "label": "Cote d'Ivoire->BERE->DIANRA->Dianra"
+        },
+        {
+          "value": "Dianra",
+          "label": "Cote d'Ivoire->BERE->DIANRA->Dianra->Dianra"
+        },
+        {
+          "value": "KOUNAHIRI",
+          "label": "Cote d'Ivoire->BERE->KOUNAHIRI"
+        },
+        {
+          "value": "Kongasso",
+          "label": "Cote d'Ivoire->BERE->KOUNAHIRI->Kongasso"
+        },
+        {
+          "value": "Kongasso",
+          "label": "Cote d'Ivoire->BERE->KOUNAHIRI->Kongasso->Kongasso"
+        },
+        {
+          "value": "Kounahiri",
+          "label": "Cote d'Ivoire->BERE->KOUNAHIRI->Kounahiri"
+        },
+        {
+          "value": "Kounahiri",
+          "label": "Cote d'Ivoire->BERE->KOUNAHIRI->Kounahiri->Kounahiri"
+        },
+        {
+          "value": "MANKONO",
+          "label": "Cote d'Ivoire->BERE->MANKONO"
+        },
+        {
+          "value": "BOUANDOUGOU",
+          "label": "Cote d'Ivoire->BERE->MANKONO->BOUANDOUGOU"
+        },
+        {
+          "value": "Guitry",
+          "label": "Cote d'Ivoire->BERE->MANKONO->Guitry"
+        },
+        {
+          "value": "MARHANDALLAH",
+          "label": "Cote d'Ivoire->BERE->MANKONO->MARHANDALLAH"
+        },
+        {
+          "value": "Mankono",
+          "label": "Cote d'Ivoire->BERE->MANKONO->Mankono"
+        },
+        {
+          "value": "Mankono",
+          "label": "Cote d'Ivoire->BERE->MANKONO->Mankono->Mankono"
+        },
+        {
+          "value": "Sarhala",
+          "label": "Cote d'Ivoire->BERE->MANKONO->Sarhala"
+        },
+        {
+          "value": "Sarhala",
+          "label": "Cote d'Ivoire->BERE->MANKONO->Sarhala->Sarhala"
+        },
+        {
+          "value": "Tiéningboué",
+          "label": "Cote d'Ivoire->BERE->MANKONO->Tiéningboué"
+        },
+        {
+          "value": "Tieningboue",
+          "label": "Cote d'Ivoire->BERE->MANKONO->Tiéningboué->Tieningboue"
+        },
+        {
+          "value": "BOUKANI",
+          "label": "Cote d'Ivoire->BOUKANI"
+        },
+        {
+          "value": "BOUNA",
+          "label": "Cote d'Ivoire->BOUKANI->BOUNA"
+        },
+        {
+          "value": "BOUKO",
+          "label": "Cote d'Ivoire->BOUKANI->BOUNA->BOUKO"
+        },
+        {
+          "value": "BOUNDOUO",
+          "label": "Cote d'Ivoire->BOUKANI->BOUNA->BOUNDOUO"
+        },
+        {
+          "value": "Bouna",
+          "label": "Cote d'Ivoire->BOUKANI->BOUNA->Bouna"
+        },
+        {
+          "value": "Bouna",
+          "label": "Cote d'Ivoire->BOUKANI->BOUNA->Bouna->Bouna"
+        },
+        {
+          "value": "Dougroupalegnoa",
+          "label": "Cote d'Ivoire->BOUKANI->BOUNA->Dougroupalegnoa"
+        },
+        {
+          "value": "Gagnoa",
+          "label": "Cote d'Ivoire->BOUKANI->BOUNA->Gagnoa"
+        },
+        {
+          "value": "Galebouo",
+          "label": "Cote d'Ivoire->BOUKANI->BOUNA->Galebouo"
+        },
+        {
+          "value": "KALAMON",
+          "label": "Cote d'Ivoire->BOUKANI->BOUNA->KALAMON"
+        },
+        {
+          "value": "ONDEFIDOUO",
+          "label": "Cote d'Ivoire->BOUKANI->BOUNA->ONDEFIDOUO"
+        },
+        {
+          "value": "DOROPO",
+          "label": "Cote d'Ivoire->BOUKANI->DOROPO"
+        },
+        {
+          "value": "DANOA",
+          "label": "Cote d'Ivoire->BOUKANI->DOROPO->DANOA"
+        },
+        {
+          "value": "Doropo",
+          "label": "Cote d'Ivoire->BOUKANI->DOROPO->Doropo"
+        },
+        {
+          "value": "Doropo",
+          "label": "Cote d'Ivoire->BOUKANI->DOROPO->Doropo->Doropo"
+        },
+        {
+          "value": "KALAMON",
+          "label": "Cote d'Ivoire->BOUKANI->DOROPO->KALAMON"
+        },
+        {
+          "value": "Koua",
+          "label": "Cote d'Ivoire->BOUKANI->DOROPO->Koua"
+        },
+        {
+          "value": "NIAMOE",
+          "label": "Cote d'Ivoire->BOUKANI->DOROPO->NIAMOE"
+        },
+        {
+          "value": "Semien",
+          "label": "Cote d'Ivoire->BOUKANI->DOROPO->Semien"
+        },
+        {
+          "value": "Toukouzou",
+          "label": "Cote d'Ivoire->BOUKANI->DOROPO->Toukouzou"
+        },
+        {
+          "value": "NASSIAN",
+          "label": "Cote d'Ivoire->BOUKANI->NASSIAN"
+        },
+        {
+          "value": "BOGOFA",
+          "label": "Cote d'Ivoire->BOUKANI->NASSIAN->BOGOFA"
+        },
+        {
+          "value": "KAKPIN",
+          "label": "Cote d'Ivoire->BOUKANI->NASSIAN->KAKPIN"
+        },
+        {
+          "value": "KOTOUBA",
+          "label": "Cote d'Ivoire->BOUKANI->NASSIAN->KOTOUBA"
+        },
+        {
+          "value": "Nassian",
+          "label": "Cote d'Ivoire->BOUKANI->NASSIAN->Nassian"
+        },
+        {
+          "value": "Nassian",
+          "label": "Cote d'Ivoire->BOUKANI->NASSIAN->Nassian->Nassian"
+        },
+        {
+          "value": "SOMINASSE",
+          "label": "Cote d'Ivoire->BOUKANI->NASSIAN->SOMINASSE"
+        },
+        {
+          "value": "Voueboufla",
+          "label": "Cote d'Ivoire->BOUKANI->NASSIAN->Voueboufla"
+        },
+        {
+          "value": "Yocoboue",
+          "label": "Cote d'Ivoire->BOUKANI->NASSIAN->Yocoboue"
+        },
+        {
+          "value": "TEHINI",
+          "label": "Cote d'Ivoire->BOUKANI->TEHINI"
+        },
+        {
+          "value": "GOGO",
+          "label": "Cote d'Ivoire->BOUKANI->TEHINI->GOGO"
+        },
+        {
+          "value": "TOUGBO",
+          "label": "Cote d'Ivoire->BOUKANI->TEHINI->TOUGBO"
+        },
+        {
+          "value": "Téhini",
+          "label": "Cote d'Ivoire->BOUKANI->TEHINI->Téhini"
+        },
+        {
+          "value": "Tehini",
+          "label": "Cote d'Ivoire->BOUKANI->TEHINI->Téhini->Tehini"
+        },
+        {
+          "value": "Yaou",
+          "label": "Cote d'Ivoire->BOUKANI->TEHINI->Yaou"
+        },
+        {
+          "value": "CAVALLY",
+          "label": "Cote d'Ivoire->CAVALLY"
+        },
+        {
+          "value": "BLOLEQUIN",
+          "label": "Cote d'Ivoire->CAVALLY->BLOLEQUIN"
+        },
+        {
+          "value": "Bloléquin",
+          "label": "Cote d'Ivoire->CAVALLY->BLOLEQUIN->Bloléquin"
+        },
+        {
+          "value": "Blolequin",
+          "label": "Cote d'Ivoire->CAVALLY->BLOLEQUIN->Bloléquin->Blolequin"
+        },
+        {
+          "value": "DIBOKE",
+          "label": "Cote d'Ivoire->CAVALLY->BLOLEQUIN->DIBOKE"
+        },
+        {
+          "value": "DOKE",
+          "label": "Cote d'Ivoire->CAVALLY->BLOLEQUIN->DOKE"
+        },
+        {
+          "value": "Dibiri-Assirikro",
+          "label": "Cote d'Ivoire->CAVALLY->BLOLEQUIN->Dibiri-Assirikro"
+        },
+        {
+          "value": "TINHOU",
+          "label": "Cote d'Ivoire->CAVALLY->BLOLEQUIN->TINHOU"
+        },
+        {
+          "value": "Toumodi-Sakassou",
+          "label": "Cote d'Ivoire->CAVALLY->BLOLEQUIN->Toumodi-Sakassou"
+        },
+        {
+          "value": "ZEAGLO",
+          "label": "Cote d'Ivoire->CAVALLY->BLOLEQUIN->ZEAGLO"
+        },
+        {
+          "value": "GUIGLO",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO"
+        },
+        {
+          "value": "Agnibilekrou",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->Agnibilekrou"
+        },
+        {
+          "value": "Akoboissue",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->Akoboissue"
+        },
+        {
+          "value": "BEDI-GOAZON",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->BEDI-GOAZON"
+        },
+        {
+          "value": "Dame",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->Dame"
+        },
+        {
+          "value": "Duffrebo",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->Duffrebo"
+        },
+        {
+          "value": "Guiglo",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->Guiglo"
+        },
+        {
+          "value": "Guiglo",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->Guiglo->Guiglo"
+        },
+        {
+          "value": "KAADE",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->KAADE"
+        },
+        {
+          "value": "KAANDE",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->KAANDE"
+        },
+        {
+          "value": "NIZAHON",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->NIZAHON"
+        },
+        {
+          "value": "TAI",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->TAI"
+        },
+        {
+          "value": "Tanguelan",
+          "label": "Cote d'Ivoire->CAVALLY->GUIGLO->Tanguelan"
+        },
+        {
+          "value": "TAI",
+          "label": "Cote d'Ivoire->CAVALLY->TAI"
+        },
+        {
+          "value": "TAI",
+          "label": "Cote d'Ivoire->CAVALLY->TAI->TAI"
+        },
+        {
+          "value": "Tai",
+          "label": "Cote d'Ivoire->CAVALLY->TAI->TAI->Tai"
+        },
+        {
+          "value": "ZAGNE",
+          "label": "Cote d'Ivoire->CAVALLY->TAI->ZAGNE"
+        },
+        {
+          "value": "TAÏ",
+          "label": "Cote d'Ivoire->CAVALLY->TAÏ"
+        },
+        {
+          "value": "Taï",
+          "label": "Cote d'Ivoire->CAVALLY->TAÏ->Taï"
+        },
+        {
+          "value": "Taï",
+          "label": "Cote d'Ivoire->CAVALLY->TAÏ->Taï->Taï"
+        },
+        {
+          "value": "ZAGNE",
+          "label": "Cote d'Ivoire->CAVALLY->TAÏ->ZAGNE"
+        },
+        {
+          "value": "TOULEPLEU",
+          "label": "Cote d'Ivoire->CAVALLY->TOULEPLEU"
+        },
+        {
+          "value": "Adjouan",
+          "label": "Cote d'Ivoire->CAVALLY->TOULEPLEU->Adjouan"
+        },
+        {
+          "value": "BAKOUBLY",
+          "label": "Cote d'Ivoire->CAVALLY->TOULEPLEU->BAKOUBLY"
+        },
+        {
+          "value": "MEO",
+          "label": "Cote d'Ivoire->CAVALLY->TOULEPLEU->MEO"
+        },
+        {
+          "value": "NEZOBLY",
+          "label": "Cote d'Ivoire->CAVALLY->TOULEPLEU->NEZOBLY"
+        },
+        {
+          "value": "PEHE",
+          "label": "Cote d'Ivoire->CAVALLY->TOULEPLEU->PEHE"
+        },
+        {
+          "value": "TIOBLY",
+          "label": "Cote d'Ivoire->CAVALLY->TOULEPLEU->TIOBLY"
+        },
+        {
+          "value": "Touleupleu",
+          "label": "Cote d'Ivoire->CAVALLY->TOULEPLEU->Touleupleu"
+        },
+        {
+          "value": "Toulepleu",
+          "label": "Cote d'Ivoire->CAVALLY->TOULEPLEU->Touleupleu->Toulepleu"
+        },
+        {
+          "value": "D. YAMOUSSOUKRO",
+          "label": "Cote d'Ivoire->D. YAMOUSSOUKRO"
+        },
+        {
+          "value": "ATTIEGOUAKRO",
+          "label": "Cote d'Ivoire->D. YAMOUSSOUKRO->ATTIEGOUAKRO"
+        },
+        {
+          "value": "Brofodoume",
+          "label": "Cote d'Ivoire->D. YAMOUSSOUKRO->ATTIEGOUAKRO->Brofodoume"
+        },
+        {
+          "value": "Songon",
+          "label": "Cote d'Ivoire->D. YAMOUSSOUKRO->ATTIEGOUAKRO->Songon"
+        },
+        {
+          "value": "YAMOUSSOUKRO",
+          "label": "Cote d'Ivoire->D. YAMOUSSOUKRO->YAMOUSSOUKRO"
+        },
+        {
+          "value": "ATTIEGOUAKRO",
+          "label": "Cote d'Ivoire->D. YAMOUSSOUKRO->YAMOUSSOUKRO->ATTIEGOUAKRO"
+        },
+        {
+          "value": "KOSSOU",
+          "label": "Cote d'Ivoire->D. YAMOUSSOUKRO->YAMOUSSOUKRO->KOSSOU"
+        },
+        {
+          "value": "Kaouara",
+          "label": "Cote d'Ivoire->D. YAMOUSSOUKRO->YAMOUSSOUKRO->Kaouara"
+        },
+        {
+          "value": "LOLOBO (D'ATTIEGOUAKRO)",
+          "label": "Cote d'Ivoire->D. YAMOUSSOUKRO->YAMOUSSOUKRO->LOLOBO (D'ATTIEGOUAKRO)"
+        },
+        {
+          "value": "Sikolo",
+          "label": "Cote d'Ivoire->D. YAMOUSSOUKRO->YAMOUSSOUKRO->Sikolo"
+        },
+        {
+          "value": "Yamoussoukro",
+          "label": "Cote d'Ivoire->D. YAMOUSSOUKRO->YAMOUSSOUKRO->Yamoussoukro"
+        },
+        {
+          "value": "FOLON",
+          "label": "Cote d'Ivoire->FOLON"
+        },
+        {
+          "value": "KANIASSO",
+          "label": "Cote d'Ivoire->FOLON->KANIASSO"
+        },
+        {
+          "value": "Goulia",
+          "label": "Cote d'Ivoire->FOLON->KANIASSO->Goulia"
+        },
+        {
+          "value": "Goulia",
+          "label": "Cote d'Ivoire->FOLON->KANIASSO->Goulia->Goulia"
+        },
+        {
+          "value": "Kaniasso",
+          "label": "Cote d'Ivoire->FOLON->KANIASSO->Kaniasso"
+        },
+        {
+          "value": "Kanassio",
+          "label": "Cote d'Ivoire->FOLON->KANIASSO->Kaniasso->Kanassio"
+        },
+        {
+          "value": "MAHANDIANA-SOKOURANI",
+          "label": "Cote d'Ivoire->FOLON->KANIASSO->MAHANDIANA-SOKOURANI"
+        },
+        {
+          "value": "MINIGNAN",
+          "label": "Cote d'Ivoire->FOLON->MINIGNAN"
+        },
+        {
+          "value": "KIMIRILA-NORD",
+          "label": "Cote d'Ivoire->FOLON->MINIGNAN->KIMIRILA-NORD"
+        },
+        {
+          "value": "Lauzoua",
+          "label": "Cote d'Ivoire->FOLON->MINIGNAN->Lauzoua"
+        },
+        {
+          "value": "Minignan",
+          "label": "Cote d'Ivoire->FOLON->MINIGNAN->Minignan"
+        },
+        {
+          "value": "Minignan",
+          "label": "Cote d'Ivoire->FOLON->MINIGNAN->Minignan->Minignan"
+        },
+        {
+          "value": "SOKORO",
+          "label": "Cote d'Ivoire->FOLON->MINIGNAN->SOKORO"
+        },
+        {
+          "value": "Tienko",
+          "label": "Cote d'Ivoire->FOLON->MINIGNAN->Tienko"
+        },
+        {
+          "value": "Tienko",
+          "label": "Cote d'Ivoire->FOLON->MINIGNAN->Tienko->Tienko"
+        },
+        {
+          "value": "GBEKE",
+          "label": "Cote d'Ivoire->GBEKE"
+        },
+        {
+          "value": "BEOUMI",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI"
+        },
+        {
+          "value": "ANDO-KEKRENOU",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->ANDO-KEKRENOU"
+        },
+        {
+          "value": "Bodokro",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->Bodokro"
+        },
+        {
+          "value": "Bodokro",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->Bodokro->Bodokro"
+        },
+        {
+          "value": "Béoumi",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->Béoumi"
+        },
+        {
+          "value": "Beoumi",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->Béoumi->Beoumi"
+        },
+        {
+          "value": "KODOBRO",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->KODOBRO"
+        },
+        {
+          "value": "Kondrobo",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->Kondrobo"
+        },
+        {
+          "value": "LOLOBO (DE BEOUMI)",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->LOLOBO (DE BEOUMI)"
+        },
+        {
+          "value": "MARABADJASSA",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->MARABADJASSA"
+        },
+        {
+          "value": "Mamini",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->Mamini"
+        },
+        {
+          "value": "N'GUESSANKRO",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->N'GUESSANKRO"
+        },
+        {
+          "value": "N'Guessankro 1",
+          "label": "Cote d'Ivoire->GBEKE->BEOUMI->N'Guessankro 1"
+        },
+        {
+          "value": "BOTRO",
+          "label": "Cote d'Ivoire->GBEKE->BOTRO"
+        },
+        {
+          "value": "Botro",
+          "label": "Cote d'Ivoire->GBEKE->BOTRO->Botro"
+        },
+        {
+          "value": "Botro",
+          "label": "Cote d'Ivoire->GBEKE->BOTRO->Botro->Botro"
+        },
+        {
+          "value": "Diabo",
+          "label": "Cote d'Ivoire->GBEKE->BOTRO->Diabo"
+        },
+        {
+          "value": "Diabo",
+          "label": "Cote d'Ivoire->GBEKE->BOTRO->Diabo->Diabo"
+        },
+        {
+          "value": "KROFOINSOU",
+          "label": "Cote d'Ivoire->GBEKE->BOTRO->KROFOINSOU"
+        },
+        {
+          "value": "LANGUIBONOU",
+          "label": "Cote d'Ivoire->GBEKE->BOTRO->LANGUIBONOU"
+        },
+        {
+          "value": "Ouragahio",
+          "label": "Cote d'Ivoire->GBEKE->BOTRO->Ouragahio"
+        },
+        {
+          "value": "BOUAKE",
+          "label": "Cote d'Ivoire->GBEKE->BOUAKE"
+        },
+        {
+          "value": "BOUNDA",
+          "label": "Cote d'Ivoire->GBEKE->BOUAKE->BOUNDA"
+        },
+        {
+          "value": "Bouaké",
+          "label": "Cote d'Ivoire->GBEKE->BOUAKE->Bouaké"
+        },
+        {
+          "value": "Bouake",
+          "label": "Cote d'Ivoire->GBEKE->BOUAKE->Bouaké->Bouake"
+        },
+        {
+          "value": "Brobo",
+          "label": "Cote d'Ivoire->GBEKE->BOUAKE->Brobo"
+        },
+        {
+          "value": "Brobo",
+          "label": "Cote d'Ivoire->GBEKE->BOUAKE->Brobo->Brobo"
+        },
+        {
+          "value": "DJEBONOUA",
+          "label": "Cote d'Ivoire->GBEKE->BOUAKE->DJEBONOUA"
+        },
+        {
+          "value": "Diegonefla",
+          "label": "Cote d'Ivoire->GBEKE->BOUAKE->Diegonefla"
+        },
+        {
+          "value": "Dignago",
+          "label": "Cote d'Ivoire->GBEKE->BOUAKE->Dignago"
+        },
+        {
+          "value": "MAMINI",
+          "label": "Cote d'Ivoire->GBEKE->BOUAKE->MAMINI"
+        },
+        {
+          "value": "SAKASSOU",
+          "label": "Cote d'Ivoire->GBEKE->SAKASSOU"
+        },
+        {
+          "value": "AYAOU-SRAN",
+          "label": "Cote d'Ivoire->GBEKE->SAKASSOU->AYAOU-SRAN"
+        },
+        {
+          "value": "Bengassou",
+          "label": "Cote d'Ivoire->GBEKE->SAKASSOU->Bengassou"
+        },
+        {
+          "value": "DIBRI-ASSIRIKRO",
+          "label": "Cote d'Ivoire->GBEKE->SAKASSOU->DIBRI-ASSIRIKRO"
+        },
+        {
+          "value": "Kouadioblekro",
+          "label": "Cote d'Ivoire->GBEKE->SAKASSOU->Kouadioblekro"
+        },
+        {
+          "value": "Sakassou",
+          "label": "Cote d'Ivoire->GBEKE->SAKASSOU->Sakassou"
+        },
+        {
+          "value": "Sakassou",
+          "label": "Cote d'Ivoire->GBEKE->SAKASSOU->Sakassou->Sakassou"
+        },
+        {
+          "value": "TOUMODI-SAKASSO",
+          "label": "Cote d'Ivoire->GBEKE->SAKASSOU->TOUMODI-SAKASSO"
+        },
+        {
+          "value": "GBOKLE",
+          "label": "Cote d'Ivoire->GBOKLE"
+        },
+        {
+          "value": "FRESCO",
+          "label": "Cote d'Ivoire->GBOKLE->FRESCO"
+        },
+        {
+          "value": "Beoue-Zibiao",
+          "label": "Cote d'Ivoire->GBOKLE->FRESCO->Beoue-Zibiao"
+        },
+        {
+          "value": "Fresco",
+          "label": "Cote d'Ivoire->GBOKLE->FRESCO->Fresco"
+        },
+        {
+          "value": "Fresco",
+          "label": "Cote d'Ivoire->GBOKLE->FRESCO->Fresco->Fresco"
+        },
+        {
+          "value": "GBAGBAM",
+          "label": "Cote d'Ivoire->GBOKLE->FRESCO->GBAGBAM"
+        },
+        {
+          "value": "SASSANDRA",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA"
+        },
+        {
+          "value": "DAHIRI",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA->DAHIRI"
+        },
+        {
+          "value": "DAKPADOU",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA->DAKPADOU"
+        },
+        {
+          "value": "GRIHIRI",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA->GRIHIRI"
+        },
+        {
+          "value": "Gnamangui",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA->Gnamangui"
+        },
+        {
+          "value": "LOBAKUYA",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA->LOBAKUYA"
+        },
+        {
+          "value": "Lataha",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA->Lataha"
+        },
+        {
+          "value": "MEDON",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA->MEDON"
+        },
+        {
+          "value": "Okrouyo",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA->Okrouyo"
+        },
+        {
+          "value": "SAGO",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA->SAGO"
+        },
+        {
+          "value": "Sassandra",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA->Sassandra"
+        },
+        {
+          "value": "Sassandra",
+          "label": "Cote d'Ivoire->GBOKLE->SASSANDRA->Sassandra->Sassandra"
+        },
+        {
+          "value": "GONTOUGO",
+          "label": "Cote d'Ivoire->GONTOUGO"
+        },
+        {
+          "value": "BONDOUKOU",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU"
+        },
+        {
+          "value": "APIMANDOUM",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->APIMANDOUM"
+        },
+        {
+          "value": "BONDO",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->BONDO"
+        },
+        {
+          "value": "Bayota",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->Bayota"
+        },
+        {
+          "value": "Bondoukou",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->Bondoukou"
+        },
+        {
+          "value": "Bondoukou",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->Bondoukou->Bondoukou"
+        },
+        {
+          "value": "GOUMERE",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->GOUMERE"
+        },
+        {
+          "value": "Guepahouo",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->Guepahouo"
+        },
+        {
+          "value": "Guiberoua",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->Guiberoua"
+        },
+        {
+          "value": "LAOUD-IBA",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->LAOUD-IBA"
+        },
+        {
+          "value": "Oume",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->Oume"
+        },
+        {
+          "value": "PINDA-BOKORO",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->PINDA-BOKORO"
+        },
+        {
+          "value": "SAPLI-SEPINGO",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->SAPLI-SEPINGO"
+        },
+        {
+          "value": "SOROBANGO",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->SOROBANGO"
+        },
+        {
+          "value": "TABAGNE",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->TABAGNE"
+        },
+        {
+          "value": "TAGADI",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->TAGADI"
+        },
+        {
+          "value": "TAOUDI",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->TAOUDI"
+        },
+        {
+          "value": "YEZIMALA",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->YEZIMALA"
+        },
+        {
+          "value": "Yopohue",
+          "label": "Cote d'Ivoire->GONTOUGO->BONDOUKOU->Yopohue"
+        },
+        {
+          "value": "KOUN-FAO",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO"
+        },
+        {
+          "value": "KOUN-FAO",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO"
+        },
+        {
+          "value": "Aboisso-Comoe",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->Aboisso-Comoe"
+        },
+        {
+          "value": "Alepe",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->Alepe"
+        },
+        {
+          "value": "Allosso",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->Allosso"
+        },
+        {
+          "value": "BOAHIA",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->BOAHIA"
+        },
+        {
+          "value": "Dinguira",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->Dinguira"
+        },
+        {
+          "value": "Hire",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->Hire"
+        },
+        {
+          "value": "KOKOMIAN",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->KOKOMIAN"
+        },
+        {
+          "value": "Kouassi-Datékro",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->Kouassi-Datékro"
+        },
+        {
+          "value": "Kouassi-Datekro",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->Kouassi-Datékro->Kouassi-Datekro"
+        },
+        {
+          "value": "Koun-Fao",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->Koun-Fao"
+        },
+        {
+          "value": "Kon-Fao",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->Koun-Fao->Kon-Fao"
+        },
+        {
+          "value": "Oghlwapo",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->Oghlwapo"
+        },
+        {
+          "value": "TANKESSE",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->TANKESSE"
+        },
+        {
+          "value": "TIENKOIKRO",
+          "label": "Cote d'Ivoire->GONTOUGO->KOUN-FAO->TIENKOIKRO"
+        },
+        {
+          "value": "SANDEGUE",
+          "label": "Cote d'Ivoire->GONTOUGO->SANDEGUE"
+        },
+        {
+          "value": "BANDAKAGNI-TOMORA",
+          "label": "Cote d'Ivoire->GONTOUGO->SANDEGUE->BANDAKAGNI-TOMORA"
+        },
+        {
+          "value": "DIMANDOUGOU",
+          "label": "Cote d'Ivoire->GONTOUGO->SANDEGUE->DIMANDOUGOU"
+        },
+        {
+          "value": "Dapeoua",
+          "label": "Cote d'Ivoire->GONTOUGO->SANDEGUE->Dapeoua"
+        },
+        {
+          "value": "Sandèguè",
+          "label": "Cote d'Ivoire->GONTOUGO->SANDEGUE->Sandèguè"
+        },
+        {
+          "value": "Sandegue",
+          "label": "Cote d'Ivoire->GONTOUGO->SANDEGUE->Sandèguè->Sandegue"
+        },
+        {
+          "value": "TAOUDI",
+          "label": "Cote d'Ivoire->GONTOUGO->SANDEGUE->TAOUDI"
+        },
+        {
+          "value": "YOROBODI",
+          "label": "Cote d'Ivoire->GONTOUGO->SANDEGUE->YOROBODI"
+        },
+        {
+          "value": "TANDA",
+          "label": "Cote d'Ivoire->GONTOUGO->TANDA"
+        },
+        {
+          "value": "AMANVI",
+          "label": "Cote d'Ivoire->GONTOUGO->TANDA->AMANVI"
+        },
+        {
+          "value": "Bianouan",
+          "label": "Cote d'Ivoire->GONTOUGO->TANDA->Bianouan"
+        },
+        {
+          "value": "DIAMBA",
+          "label": "Cote d'Ivoire->GONTOUGO->TANDA->DIAMBA"
+        },
+        {
+          "value": "TCHEDIO",
+          "label": "Cote d'Ivoire->GONTOUGO->TANDA->TCHEDIO"
+        },
+        {
+          "value": "Tanda",
+          "label": "Cote d'Ivoire->GONTOUGO->TANDA->Tanda"
+        },
+        {
+          "value": "Tanda",
+          "label": "Cote d'Ivoire->GONTOUGO->TANDA->Tanda->Tanda"
+        },
+        {
+          "value": "TRANSUA",
+          "label": "Cote d'Ivoire->GONTOUGO->TRANSUA"
+        },
+        {
+          "value": "Assuéfry",
+          "label": "Cote d'Ivoire->GONTOUGO->TRANSUA->Assuéfry"
+        },
+        {
+          "value": "Transua",
+          "label": "Cote d'Ivoire->GONTOUGO->TRANSUA->Assuéfry->Transua"
+        },
+        {
+          "value": "Grand-Bassam",
+          "label": "Cote d'Ivoire->GONTOUGO->TRANSUA->Grand-Bassam"
+        },
+        {
+          "value": "KOUASSI-NIAGUINI",
+          "label": "Cote d'Ivoire->GONTOUGO->TRANSUA->KOUASSI-NIAGUINI"
+        },
+        {
+          "value": "Transua",
+          "label": "Cote d'Ivoire->GONTOUGO->TRANSUA->Transua"
+        },
+        {
+          "value": "Assuefry",
+          "label": "Cote d'Ivoire->GONTOUGO->TRANSUA->Transua->Assuefry"
+        },
+        {
+          "value": "GRANDS PONTS",
+          "label": "Cote d'Ivoire->GRANDS PONTS"
+        },
+        {
+          "value": "DABOU",
+          "label": "Cote d'Ivoire->GRANDS PONTS->DABOU"
+        },
+        {
+          "value": "Dabou",
+          "label": "Cote d'Ivoire->GRANDS PONTS->DABOU->Dabou"
+        },
+        {
+          "value": "Dabou",
+          "label": "Cote d'Ivoire->GRANDS PONTS->DABOU->Dabou->Dabou"
+        },
+        {
+          "value": "LOPOU",
+          "label": "Cote d'Ivoire->GRANDS PONTS->DABOU->LOPOU"
+        },
+        {
+          "value": "TOUPAH",
+          "label": "Cote d'Ivoire->GRANDS PONTS->DABOU->TOUPAH"
+        },
+        {
+          "value": "GRAND-LAHOU",
+          "label": "Cote d'Ivoire->GRANDS PONTS->GRAND-LAHOU"
+        },
+        {
+          "value": "AHOUANOU",
+          "label": "Cote d'Ivoire->GRANDS PONTS->GRAND-LAHOU->AHOUANOU"
+        },
+        {
+          "value": "BACANDA",
+          "label": "Cote d'Ivoire->GRANDS PONTS->GRAND-LAHOU->BACANDA"
+        },
+        {
+          "value": "EBONOU",
+          "label": "Cote d'Ivoire->GRANDS PONTS->GRAND-LAHOU->EBONOU"
+        },
+        {
+          "value": "Ettrokro",
+          "label": "Cote d'Ivoire->GRANDS PONTS->GRAND-LAHOU->Ettrokro"
+        },
+        {
+          "value": "Grand-Lahou",
+          "label": "Cote d'Ivoire->GRANDS PONTS->GRAND-LAHOU->Grand-Lahou"
+        },
+        {
+          "value": "Grand-Lahou",
+          "label": "Cote d'Ivoire->GRANDS PONTS->GRAND-LAHOU->Grand-Lahou->Grand-Lahou"
+        },
+        {
+          "value": "N'Gattakro",
+          "label": "Cote d'Ivoire->GRANDS PONTS->GRAND-LAHOU->N'Gattakro"
+        },
+        {
+          "value": "TOUKOUZOU",
+          "label": "Cote d'Ivoire->GRANDS PONTS->GRAND-LAHOU->TOUKOUZOU"
+        },
+        {
+          "value": "JACQUEVILLE",
+          "label": "Cote d'Ivoire->GRANDS PONTS->JACQUEVILLE"
+        },
+        {
+          "value": "ATTOUTOU",
+          "label": "Cote d'Ivoire->GRANDS PONTS->JACQUEVILLE->ATTOUTOU"
+        },
+        {
+          "value": "Jacqueville",
+          "label": "Cote d'Ivoire->GRANDS PONTS->JACQUEVILLE->Jacqueville"
+        },
+        {
+          "value": "Jacqueville",
+          "label": "Cote d'Ivoire->GRANDS PONTS->JACQUEVILLE->Jacqueville->Jacqueville"
+        },
+        {
+          "value": "GUEMON",
+          "label": "Cote d'Ivoire->GUEMON"
+        },
+        {
+          "value": "BANGOLO",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO"
+        },
+        {
+          "value": "Abidjan",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->Abidjan"
+        },
+        {
+          "value": "BEOUE-ZIBIAO",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->BEOUE-ZIBIAO"
+        },
+        {
+          "value": "BLENIMEQUIN",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->BLENIMEQUIN"
+        },
+        {
+          "value": "Bangolo",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->Bangolo"
+        },
+        {
+          "value": "Bangolo",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->Bangolo->Bangolo"
+        },
+        {
+          "value": "Bingerville",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->Bingerville"
+        },
+        {
+          "value": "DIEOUZON",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->DIEOUZON"
+        },
+        {
+          "value": "GOHOUO-ZAGNA",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->GOHOUO-ZAGNA"
+        },
+        {
+          "value": "GUINGO-TAHOUAKE",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->GUINGO-TAHOUAKE"
+        },
+        {
+          "value": "KAHIN-ZARABAON",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->KAHIN-ZARABAON"
+        },
+        {
+          "value": "Kimbirila-Nord",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->Kimbirila-Nord"
+        },
+        {
+          "value": "Krofoinsou",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->Krofoinsou"
+        },
+        {
+          "value": "ZEO",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->ZEO"
+        },
+        {
+          "value": "ZOU",
+          "label": "Cote d'Ivoire->GUEMON->BANGOLO->ZOU"
+        },
+        {
+          "value": "DUEKOUE",
+          "label": "Cote d'Ivoire->GUEMON->DUEKOUE"
+        },
+        {
+          "value": "BAGOHOUO",
+          "label": "Cote d'Ivoire->GUEMON->DUEKOUE->BAGOHOUO"
+        },
+        {
+          "value": "Duékoué",
+          "label": "Cote d'Ivoire->GUEMON->DUEKOUE->Duékoué"
+        },
+        {
+          "value": "Duekoue",
+          "label": "Cote d'Ivoire->GUEMON->DUEKOUE->Duékoué->Duekoue"
+        },
+        {
+          "value": "GBAPLEU",
+          "label": "Cote d'Ivoire->GUEMON->DUEKOUE->GBAPLEU"
+        },
+        {
+          "value": "GUEHIEBLY",
+          "label": "Cote d'Ivoire->GUEMON->DUEKOUE->GUEHIEBLY"
+        },
+        {
+          "value": "GUEZON",
+          "label": "Cote d'Ivoire->GUEMON->DUEKOUE->GUEZON"
+        },
+        {
+          "value": "FACOBLY",
+          "label": "Cote d'Ivoire->GUEMON->FACOBLY"
+        },
+        {
+          "value": "Facobly",
+          "label": "Cote d'Ivoire->GUEMON->FACOBLY->Facobly"
+        },
+        {
+          "value": "Facobly",
+          "label": "Cote d'Ivoire->GUEMON->FACOBLY->Facobly->Facobly"
+        },
+        {
+          "value": "GUEZON",
+          "label": "Cote d'Ivoire->GUEMON->FACOBLY->GUEZON"
+        },
+        {
+          "value": "Guezon 2",
+          "label": "Cote d'Ivoire->GUEMON->FACOBLY->Guezon 2"
+        },
+        {
+          "value": "KOUA",
+          "label": "Cote d'Ivoire->GUEMON->FACOBLY->KOUA"
+        },
+        {
+          "value": "Ouyably-Yondrou",
+          "label": "Cote d'Ivoire->GUEMON->FACOBLY->Ouyably-Yondrou"
+        },
+        {
+          "value": "SEMIEN",
+          "label": "Cote d'Ivoire->GUEMON->FACOBLY->SEMIEN"
+        },
+        {
+          "value": "TIENY-SIABLY",
+          "label": "Cote d'Ivoire->GUEMON->FACOBLY->TIENY-SIABLY"
+        },
+        {
+          "value": "Tieny-Seably",
+          "label": "Cote d'Ivoire->GUEMON->FACOBLY->Tieny-Seably"
+        },
+        {
+          "value": "Totrodrou",
+          "label": "Cote d'Ivoire->GUEMON->FACOBLY->Totrodrou"
+        },
+        {
+          "value": "KOUIBLY",
+          "label": "Cote d'Ivoire->GUEMON->KOUIBLY"
+        },
+        {
+          "value": "Becedi-Brignan",
+          "label": "Cote d'Ivoire->GUEMON->KOUIBLY->Becedi-Brignan"
+        },
+        {
+          "value": "Kouibly",
+          "label": "Cote d'Ivoire->GUEMON->KOUIBLY->Kouibly"
+        },
+        {
+          "value": "Kouibly",
+          "label": "Cote d'Ivoire->GUEMON->KOUIBLY->Kouibly->Kouibly"
+        },
+        {
+          "value": "NIDROU",
+          "label": "Cote d'Ivoire->GUEMON->KOUIBLY->NIDROU"
+        },
+        {
+          "value": "OUYABLY-GNANDROU",
+          "label": "Cote d'Ivoire->GUEMON->KOUIBLY->OUYABLY-GNANDROU"
+        },
+        {
+          "value": "TOTRODOU",
+          "label": "Cote d'Ivoire->GUEMON->KOUIBLY->TOTRODOU"
+        },
+        {
+          "value": "Yakasse-Me",
+          "label": "Cote d'Ivoire->GUEMON->KOUIBLY->Yakasse-Me"
+        },
+        {
+          "value": "GÔH",
+          "label": "Cote d'Ivoire->GÔH"
+        },
+        {
+          "value": "GAGNOA",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA"
+        },
+        {
+          "value": "BAYOTA",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->BAYOTA"
+        },
+        {
+          "value": "Bazra-Nattis",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Bazra-Nattis"
+        },
+        {
+          "value": "Blenimeouin",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Blenimeouin"
+        },
+        {
+          "value": "DAHIEPA-KEHI",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->DAHIEPA-KEHI"
+        },
+        {
+          "value": "DIGNAGO",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->DIGNAGO"
+        },
+        {
+          "value": "DOUGROUPALEGNAOA",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->DOUGROUPALEGNAOA"
+        },
+        {
+          "value": "DOUKOUYO",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->DOUKOUYO"
+        },
+        {
+          "value": "Dananon",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Dananon"
+        },
+        {
+          "value": "Domangbeu",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Domangbeu"
+        },
+        {
+          "value": "GALEBRE",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->GALEBRE"
+        },
+        {
+          "value": "GNANGBODOUGNOA",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->GNANGBODOUGNOA"
+        },
+        {
+          "value": "Gagnoa",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Gagnoa"
+        },
+        {
+          "value": "Gagnoa",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Gagnoa->Gagnoa"
+        },
+        {
+          "value": "Guibéroua",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Guibéroua"
+        },
+        {
+          "value": "Guiberoua",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Guibéroua->Guiberoua"
+        },
+        {
+          "value": "Guinglo-Tahouake",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Guinglo-Tahouake"
+        },
+        {
+          "value": "Kahin-Zarabaon",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Kahin-Zarabaon"
+        },
+        {
+          "value": "Ketro-Bassam",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Ketro-Bassam"
+        },
+        {
+          "value": "Kondossou",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Kondossou"
+        },
+        {
+          "value": "Ouragahio",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Ouragahio"
+        },
+        {
+          "value": "Ouragahio",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Ouragahio->Ouragahio"
+        },
+        {
+          "value": "SERIHIO",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->SERIHIO"
+        },
+        {
+          "value": "Seitifla",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Seitifla"
+        },
+        {
+          "value": "Tapeguia",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Tapeguia"
+        },
+        {
+          "value": "Tendene-Bambarasso",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Tendene-Bambarasso"
+        },
+        {
+          "value": "YOPOHUE",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->YOPOHUE"
+        },
+        {
+          "value": "Yaossedougou",
+          "label": "Cote d'Ivoire->GÔH->GAGNOA->Yaossedougou"
+        },
+        {
+          "value": "OUME",
+          "label": "Cote d'Ivoire->GÔH->OUME"
+        },
+        {
+          "value": "Bocanda",
+          "label": "Cote d'Ivoire->GÔH->OUME->Bocanda"
+        },
+        {
+          "value": "Diégonéfra",
+          "label": "Cote d'Ivoire->GÔH->OUME->Diégonéfra"
+        },
+        {
+          "value": "Diegonefra",
+          "label": "Cote d'Ivoire->GÔH->OUME->Diégonéfra->Diegonefra"
+        },
+        {
+          "value": "GUEPAHOUO",
+          "label": "Cote d'Ivoire->GÔH->OUME->GUEPAHOUO"
+        },
+        {
+          "value": "Kouetinfla",
+          "label": "Cote d'Ivoire->GÔH->OUME->Kouetinfla"
+        },
+        {
+          "value": "N'Douffoukankro",
+          "label": "Cote d'Ivoire->GÔH->OUME->N'Douffoukankro"
+        },
+        {
+          "value": "Oumé",
+          "label": "Cote d'Ivoire->GÔH->OUME->Oumé"
+        },
+        {
+          "value": "Oume",
+          "label": "Cote d'Ivoire->GÔH->OUME->Oumé->Oume"
+        },
+        {
+          "value": "TONLA",
+          "label": "Cote d'Ivoire->GÔH->OUME->TONLA"
+        },
+        {
+          "value": "Tiemelekro",
+          "label": "Cote d'Ivoire->GÔH->OUME->Tiemelekro"
+        },
+        {
+          "value": "HAMBOL",
+          "label": "Cote d'Ivoire->HAMBOL"
+        },
+        {
+          "value": "DABAKALA",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA"
+        },
+        {
+          "value": "BONIEREDOUGOU",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->BONIEREDOUGOU"
+        },
+        {
+          "value": "Bassawa",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Bassawa"
+        },
+        {
+          "value": "Bassawa",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Bassawa->Bassawa"
+        },
+        {
+          "value": "Dabakala",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Dabakala"
+        },
+        {
+          "value": "Dabakala",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Dabakala->Dabakala"
+        },
+        {
+          "value": "Doukouyo",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Doukouyo"
+        },
+        {
+          "value": "Foumbolo",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Foumbolo"
+        },
+        {
+          "value": "Foumbolo",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Foumbolo->Foumbolo"
+        },
+        {
+          "value": "NIEMENE",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->NIEMENE"
+        },
+        {
+          "value": "SOKALA-SOBARA",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->SOKALA-SOBARA"
+        },
+        {
+          "value": "Satama Sokoro",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Satama Sokoro"
+        },
+        {
+          "value": "Satama-Sokoro",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Satama Sokoro->Satama-Sokoro"
+        },
+        {
+          "value": "Satama Sokoura",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Satama Sokoura"
+        },
+        {
+          "value": "Satama-Sokoura",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Satama Sokoura->Satama-Sokoura"
+        },
+        {
+          "value": "TIENDENE-BAMBARASSO",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->TIENDENE-BAMBARASSO"
+        },
+        {
+          "value": "Tagadi",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->Tagadi"
+        },
+        {
+          "value": "YAOSSEDOUGOU",
+          "label": "Cote d'Ivoire->HAMBOL->DABAKALA->YAOSSEDOUGOU"
+        },
+        {
+          "value": "KATIOLA",
+          "label": "Cote d'Ivoire->HAMBOL->KATIOLA"
+        },
+        {
+          "value": "Fronan",
+          "label": "Cote d'Ivoire->HAMBOL->KATIOLA->Fronan"
+        },
+        {
+          "value": "Fronan",
+          "label": "Cote d'Ivoire->HAMBOL->KATIOLA->Fronan->Fronan"
+        },
+        {
+          "value": "Katiola",
+          "label": "Cote d'Ivoire->HAMBOL->KATIOLA->Katiola"
+        },
+        {
+          "value": "Katiola",
+          "label": "Cote d'Ivoire->HAMBOL->KATIOLA->Katiola->Katiola"
+        },
+        {
+          "value": "TIMBE",
+          "label": "Cote d'Ivoire->HAMBOL->KATIOLA->TIMBE"
+        },
+        {
+          "value": "NIAKARA",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARA"
+        },
+        {
+          "value": "ARIKOKAHA",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARA->ARIKOKAHA"
+        },
+        {
+          "value": "BADIKAHA",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARA->BADIKAHA"
+        },
+        {
+          "value": "NIAKARAMANDOUGOU",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARA->NIAKARAMANDOUGOU"
+        },
+        {
+          "value": "Niakaramadougou",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARA->NIAKARAMANDOUGOU->Niakaramadougou"
+        },
+        {
+          "value": "NIEDIEKAHA",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARA->NIEDIEKAHA"
+        },
+        {
+          "value": "TAFIRE",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARA->TAFIRE"
+        },
+        {
+          "value": "Tafire",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARA->TAFIRE->Tafire"
+        },
+        {
+          "value": "TORTIYA",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARA->TORTIYA"
+        },
+        {
+          "value": "Tortiya",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARA->TORTIYA->Tortiya"
+        },
+        {
+          "value": "NIAKARAMADOUGOU",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARAMADOUGOU"
+        },
+        {
+          "value": "ARIKOKAHA",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARAMADOUGOU->ARIKOKAHA"
+        },
+        {
+          "value": "BADIOKAHA",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARAMADOUGOU->BADIOKAHA"
+        },
+        {
+          "value": "NIEDIEKAHA",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARAMADOUGOU->NIEDIEKAHA"
+        },
+        {
+          "value": "Niakaramadougou",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARAMADOUGOU->Niakaramadougou"
+        },
+        {
+          "value": "Niakaramadougou",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARAMADOUGOU->Niakaramadougou->Niakaramadougou"
+        },
+        {
+          "value": "Tafiré",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARAMADOUGOU->Tafiré"
+        },
+        {
+          "value": "Tafire",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARAMADOUGOU->Tafiré->Tafire"
+        },
+        {
+          "value": "Tortiya",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARAMADOUGOU->Tortiya"
+        },
+        {
+          "value": "Tortiya",
+          "label": "Cote d'Ivoire->HAMBOL->NIAKARAMADOUGOU->Tortiya->Tortiya"
+        },
+        {
+          "value": "HAUT-SASSANDRA",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA"
+        },
+        {
+          "value": "DALOA",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->DALOA"
+        },
+        {
+          "value": "Bédiala",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->DALOA->Bédiala"
+        },
+        {
+          "value": "Bediala",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->DALOA->Bédiala->Bediala"
+        },
+        {
+          "value": "Daloa",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->DALOA->Daloa"
+        },
+        {
+          "value": "Daloa",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->DALOA->Daloa->Daloa"
+        },
+        {
+          "value": "GADOUAN",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->DALOA->GADOUAN"
+        },
+        {
+          "value": "GONATE",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->DALOA->GONATE"
+        },
+        {
+          "value": "Gboguhé",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->DALOA->Gboguhé"
+        },
+        {
+          "value": "Gboguhe",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->DALOA->Gboguhé->Gboguhe"
+        },
+        {
+          "value": "ZAIBO",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->DALOA->ZAIBO"
+        },
+        {
+          "value": "ISSIA",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ISSIA"
+        },
+        {
+          "value": "BOGUEDIA",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ISSIA->BOGUEDIA"
+        },
+        {
+          "value": "Gbongaha",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ISSIA->Gbongaha"
+        },
+        {
+          "value": "IBOGUHE",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ISSIA->IBOGUHE"
+        },
+        {
+          "value": "Issia",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ISSIA->Issia"
+        },
+        {
+          "value": "Issia",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ISSIA->Issia->Issia"
+        },
+        {
+          "value": "NAHIO",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ISSIA->NAHIO"
+        },
+        {
+          "value": "NAMANE",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ISSIA->NAMANE"
+        },
+        {
+          "value": "Saïoua",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ISSIA->Saïoua"
+        },
+        {
+          "value": "Saioua",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ISSIA->Saïoua->Saioua"
+        },
+        {
+          "value": "TAPEGUIA",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ISSIA->TAPEGUIA"
+        },
+        {
+          "value": "VAVOUA",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA"
+        },
+        {
+          "value": "Aboisso",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA->Aboisso"
+        },
+        {
+          "value": "Assinie-Mafia",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA->Assinie-Mafia"
+        },
+        {
+          "value": "BAZRA-NATTIS",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA->BAZRA-NATTIS"
+        },
+        {
+          "value": "DANANON",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA->DANANON"
+        },
+        {
+          "value": "DANIA",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA->DANIA"
+        },
+        {
+          "value": "KETRO-BASSAM",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA->KETRO-BASSAM"
+        },
+        {
+          "value": "Nouamou",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA->Nouamou"
+        },
+        {
+          "value": "SEITIFLA",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA->SEITIFLA"
+        },
+        {
+          "value": "Tiapoum",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA->Tiapoum"
+        },
+        {
+          "value": "Vavoua",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA->Vavoua"
+        },
+        {
+          "value": "Vavoua",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->VAVOUA->Vavoua->Vavoua"
+        },
+        {
+          "value": "ZOUKOUGBEU",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ZOUKOUGBEU"
+        },
+        {
+          "value": "GREGBEU",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ZOUKOUGBEU->GREGBEU"
+        },
+        {
+          "value": "GUESSABO",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ZOUKOUGBEU->GUESSABO"
+        },
+        {
+          "value": "Gbagbegouine-Yati",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ZOUKOUGBEU->Gbagbegouine-Yati"
+        },
+        {
+          "value": "Zoukougbeu",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ZOUKOUGBEU->Zoukougbeu"
+        },
+        {
+          "value": "Zoukougbeu",
+          "label": "Cote d'Ivoire->HAUT-SASSANDRA->ZOUKOUGBEU->Zoukougbeu->Zoukougbeu"
+        },
+        {
+          "value": "IFFOU",
+          "label": "Cote d'Ivoire->IFFOU"
+        },
+        {
+          "value": "DAOUKRO",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO"
+        },
+        {
+          "value": "ANANDA",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->ANANDA"
+        },
+        {
+          "value": "Appimandoum",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->Appimandoum"
+        },
+        {
+          "value": "Bandakagni-Tomora",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->Bandakagni-Tomora"
+        },
+        {
+          "value": "Bondougou",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->Bondougou"
+        },
+        {
+          "value": "Daoukro",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->Daoukro"
+        },
+        {
+          "value": "Daoukro",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->Daoukro->Daoukro"
+        },
+        {
+          "value": "Ettokro",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->Ettokro"
+        },
+        {
+          "value": "Ettokro",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->Ettokro->Ettokro"
+        },
+        {
+          "value": "N'GATTAKRO",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->N'GATTAKRO"
+        },
+        {
+          "value": "Ouélé",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->Ouélé"
+        },
+        {
+          "value": "Ouelle",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->Ouélé->Ouelle"
+        },
+        {
+          "value": "SAMANZA",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->SAMANZA"
+        },
+        {
+          "value": "Tchiedio",
+          "label": "Cote d'Ivoire->IFFOU->DAOUKRO->Tchiedio"
+        },
+        {
+          "value": "M'BAHIAKRO",
+          "label": "Cote d'Ivoire->IFFOU->M'BAHIAKRO"
+        },
+        {
+          "value": "BONGUERA",
+          "label": "Cote d'Ivoire->IFFOU->M'BAHIAKRO->BONGUERA"
+        },
+        {
+          "value": "KONDOSSOU",
+          "label": "Cote d'Ivoire->IFFOU->M'BAHIAKRO->KONDOSSOU"
+        },
+        {
+          "value": "M'Bahiakro",
+          "label": "Cote d'Ivoire->IFFOU->M'BAHIAKRO->M'Bahiakro"
+        },
+        {
+          "value": "M'bahiakro",
+          "label": "Cote d'Ivoire->IFFOU->M'BAHIAKRO->M'Bahiakro->M'bahiakro"
+        },
+        {
+          "value": "Ogoudou",
+          "label": "Cote d'Ivoire->IFFOU->M'BAHIAKRO->Ogoudou"
+        },
+        {
+          "value": "PRIKRO",
+          "label": "Cote d'Ivoire->IFFOU->PRIKRO"
+        },
+        {
+          "value": "ANIANOU",
+          "label": "Cote d'Ivoire->IFFOU->PRIKRO->ANIANOU"
+        },
+        {
+          "value": "FAMIENKRO",
+          "label": "Cote d'Ivoire->IFFOU->PRIKRO->FAMIENKRO"
+        },
+        {
+          "value": "KOFFI-AMONKRO",
+          "label": "Cote d'Ivoire->IFFOU->PRIKRO->KOFFI-AMONKRO"
+        },
+        {
+          "value": "N'Zecrezessou",
+          "label": "Cote d'Ivoire->IFFOU->PRIKRO->N'Zecrezessou"
+        },
+        {
+          "value": "NAFANA",
+          "label": "Cote d'Ivoire->IFFOU->PRIKRO->NAFANA"
+        },
+        {
+          "value": "Prikro",
+          "label": "Cote d'Ivoire->IFFOU->PRIKRO->Prikro"
+        },
+        {
+          "value": "Prikro",
+          "label": "Cote d'Ivoire->IFFOU->PRIKRO->Prikro->Prikro"
+        },
+        {
+          "value": "INDENIE-DJUABLIN",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN"
+        },
+        {
+          "value": "ABENGOUROU",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->ABENGOUROU"
+        },
+        {
+          "value": "AMELEKIA",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->ABENGOUROU->AMELEKIA"
+        },
+        {
+          "value": "ANIASSUE",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->ABENGOUROU->ANIASSUE"
+        },
+        {
+          "value": "Abengourou",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->ABENGOUROU->Abengourou"
+        },
+        {
+          "value": "Abengourou",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->ABENGOUROU->Abengourou->Abengourou"
+        },
+        {
+          "value": "Attobrou",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->ABENGOUROU->Attobrou"
+        },
+        {
+          "value": "EBILASSOUKRO",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->ABENGOUROU->EBILASSOUKRO"
+        },
+        {
+          "value": "Niablé",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->ABENGOUROU->Niablé"
+        },
+        {
+          "value": "Niable",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->ABENGOUROU->Niablé->Niable"
+        },
+        {
+          "value": "YAKASSE-FEYASSE",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->ABENGOUROU->YAKASSE-FEYASSE"
+        },
+        {
+          "value": "ZARANOU",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->ABENGOUROU->ZARANOU"
+        },
+        {
+          "value": "AGNIBILEKRO",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKRO"
+        },
+        {
+          "value": "AKOBOISSUE",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKRO->AKOBOISSUE"
+        },
+        {
+          "value": "Agnibilékro",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKRO->Agnibilékro"
+        },
+        {
+          "value": "Agnibilekro",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKRO->Agnibilékro->Agnibilekro"
+        },
+        {
+          "value": "DAME",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKRO->DAME"
+        },
+        {
+          "value": "DUFFREBO",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKRO->DUFFREBO"
+        },
+        {
+          "value": "TANGUELAN",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKRO->TANGUELAN"
+        },
+        {
+          "value": "AGNIBILEKROU",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKROU"
+        },
+        {
+          "value": "Bledi-Goazon",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKROU->Bledi-Goazon"
+        },
+        {
+          "value": "Doboke",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKROU->Doboke"
+        },
+        {
+          "value": "Kaade",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKROU->Kaade"
+        },
+        {
+          "value": "Nezobly",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKROU->Nezobly"
+        },
+        {
+          "value": "Tinhou",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->AGNIBILEKROU->Tinhou"
+        },
+        {
+          "value": "BETTIE",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->BETTIE"
+        },
+        {
+          "value": "Béttié",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->BETTIE->Béttié"
+        },
+        {
+          "value": "Bettie",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->BETTIE->Béttié->Bettie"
+        },
+        {
+          "value": "DIAMARABO",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->BETTIE->DIAMARABO"
+        },
+        {
+          "value": "Lolobo 1",
+          "label": "Cote d'Ivoire->INDENIE-DJUABLIN->BETTIE->Lolobo 1"
+        },
+        {
+          "value": "KABADOUGOU",
+          "label": "Cote d'Ivoire->KABADOUGOU"
+        },
+        {
+          "value": "GBELEBAN",
+          "label": "Cote d'Ivoire->KABADOUGOU->GBELEBAN"
+        },
+        {
+          "value": "Gbeléban",
+          "label": "Cote d'Ivoire->KABADOUGOU->GBELEBAN->Gbeléban"
+        },
+        {
+          "value": "Gbeleban",
+          "label": "Cote d'Ivoire->KABADOUGOU->GBELEBAN->Gbeléban->Gbeleban"
+        },
+        {
+          "value": "SAMANGO",
+          "label": "Cote d'Ivoire->KABADOUGOU->GBELEBAN->SAMANGO"
+        },
+        {
+          "value": "Seydougou",
+          "label": "Cote d'Ivoire->KABADOUGOU->GBELEBAN->Seydougou"
+        },
+        {
+          "value": "Seydougou",
+          "label": "Cote d'Ivoire->KABADOUGOU->GBELEBAN->Seydougou->Seydougou"
+        },
+        {
+          "value": "MADINANI",
+          "label": "Cote d'Ivoire->KABADOUGOU->MADINANI"
+        },
+        {
+          "value": "FENGOLO",
+          "label": "Cote d'Ivoire->KABADOUGOU->MADINANI->FENGOLO"
+        },
+        {
+          "value": "Madinani",
+          "label": "Cote d'Ivoire->KABADOUGOU->MADINANI->Madinani"
+        },
+        {
+          "value": "Madinani",
+          "label": "Cote d'Ivoire->KABADOUGOU->MADINANI->Madinani->Madinani"
+        },
+        {
+          "value": "N'GOLOBLASSO",
+          "label": "Cote d'Ivoire->KABADOUGOU->MADINANI->N'GOLOBLASSO"
+        },
+        {
+          "value": "ODIENNE",
+          "label": "Cote d'Ivoire->KABADOUGOU->ODIENNE"
+        },
+        {
+          "value": "BOUGOUSSO",
+          "label": "Cote d'Ivoire->KABADOUGOU->ODIENNE->BOUGOUSSO"
+        },
+        {
+          "value": "Bako",
+          "label": "Cote d'Ivoire->KABADOUGOU->ODIENNE->Bako"
+        },
+        {
+          "value": "Bako",
+          "label": "Cote d'Ivoire->KABADOUGOU->ODIENNE->Bako->Bako"
+        },
+        {
+          "value": "Dioulatiédougou",
+          "label": "Cote d'Ivoire->KABADOUGOU->ODIENNE->Dioulatiédougou"
+        },
+        {
+          "value": "Dioulatiedougou",
+          "label": "Cote d'Ivoire->KABADOUGOU->ODIENNE->Dioulatiédougou->Dioulatiedougou"
+        },
+        {
+          "value": "Iriefla",
+          "label": "Cote d'Ivoire->KABADOUGOU->ODIENNE->Iriefla"
+        },
+        {
+          "value": "Odiénné",
+          "label": "Cote d'Ivoire->KABADOUGOU->ODIENNE->Odiénné"
+        },
+        {
+          "value": "Odienne",
+          "label": "Cote d'Ivoire->KABADOUGOU->ODIENNE->Odiénné->Odienne"
+        },
+        {
+          "value": "Tiémé",
+          "label": "Cote d'Ivoire->KABADOUGOU->ODIENNE->Tiémé"
+        },
+        {
+          "value": "Tieme",
+          "label": "Cote d'Ivoire->KABADOUGOU->ODIENNE->Tiémé->Tieme"
+        },
+        {
+          "value": "SAMATIGUILA",
+          "label": "Cote d'Ivoire->KABADOUGOU->SAMATIGUILA"
+        },
+        {
+          "value": "Diangokro",
+          "label": "Cote d'Ivoire->KABADOUGOU->SAMATIGUILA->Diangokro"
+        },
+        {
+          "value": "KIMIRILA-SUD",
+          "label": "Cote d'Ivoire->KABADOUGOU->SAMATIGUILA->KIMIRILA-SUD"
+        },
+        {
+          "value": "Samatiguila",
+          "label": "Cote d'Ivoire->KABADOUGOU->SAMATIGUILA->Samatiguila"
+        },
+        {
+          "value": "Samatiguila",
+          "label": "Cote d'Ivoire->KABADOUGOU->SAMATIGUILA->Samatiguila->Samatiguila"
+        },
+        {
+          "value": "SEGUELON",
+          "label": "Cote d'Ivoire->KABADOUGOU->SEGUELON"
+        },
+        {
+          "value": "Dassoungboho",
+          "label": "Cote d'Ivoire->KABADOUGOU->SEGUELON->Dassoungboho"
+        },
+        {
+          "value": "GBONGAHA",
+          "label": "Cote d'Ivoire->KABADOUGOU->SEGUELON->GBONGAHA"
+        },
+        {
+          "value": "Séguelon",
+          "label": "Cote d'Ivoire->KABADOUGOU->SEGUELON->Séguelon"
+        },
+        {
+          "value": "Seguelon",
+          "label": "Cote d'Ivoire->KABADOUGOU->SEGUELON->Séguelon->Seguelon"
+        },
+        {
+          "value": "LÔH-DJBOUA",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA"
+        },
+        {
+          "value": "DIVO",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO"
+        },
+        {
+          "value": "Boahia",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->Boahia"
+        },
+        {
+          "value": "CHIEPO",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->CHIEPO"
+        },
+        {
+          "value": "DIDOKO",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->DIDOKO"
+        },
+        {
+          "value": "Divo",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->Divo"
+        },
+        {
+          "value": "Divo",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->Divo->Divo"
+        },
+        {
+          "value": "Ebonou",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->Ebonou"
+        },
+        {
+          "value": "Hiré",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->Hiré"
+        },
+        {
+          "value": "Hire",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->Hiré->Hire"
+        },
+        {
+          "value": "Kokomian",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->Kokomian"
+        },
+        {
+          "value": "Kouassia-Nianguini",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->Kouassia-Nianguini"
+        },
+        {
+          "value": "Koun-Fao",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->Koun-Fao"
+        },
+        {
+          "value": "NEBO",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->NEBO"
+        },
+        {
+          "value": "OGOUDOU",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->OGOUDOU"
+        },
+        {
+          "value": "Tankesse",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->Tankesse"
+        },
+        {
+          "value": "Tienkoikro",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->Tienkoikro"
+        },
+        {
+          "value": "ZEGO",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->DIVO->ZEGO"
+        },
+        {
+          "value": "GUITRY",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->GUITRY"
+        },
+        {
+          "value": "Bougouso",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->GUITRY->Bougouso"
+        },
+        {
+          "value": "DAIRO-DIDIZO",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->GUITRY->DAIRO-DIDIZO"
+        },
+        {
+          "value": "Diamarakro",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->GUITRY->Diamarakro"
+        },
+        {
+          "value": "Ebilassokro",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->GUITRY->Ebilassokro"
+        },
+        {
+          "value": "Guitry",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->GUITRY->Guitry"
+        },
+        {
+          "value": "Guitry",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->GUITRY->Guitry->Guitry"
+        },
+        {
+          "value": "Kimbirila-Sud",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->GUITRY->Kimbirila-Sud"
+        },
+        {
+          "value": "Lauzoua",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->GUITRY->Lauzoua"
+        },
+        {
+          "value": "Lauzoua",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->GUITRY->Lauzoua->Lauzoua"
+        },
+        {
+          "value": "YOCOBOUE",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->GUITRY->YOCOBOUE"
+        },
+        {
+          "value": "LAKOTA",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA"
+        },
+        {
+          "value": "Didoko",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->Didoko"
+        },
+        {
+          "value": "Djidji",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->Djidji"
+        },
+        {
+          "value": "GARORE",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->GARORE"
+        },
+        {
+          "value": "GOUDOUKO",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->GOUDOUKO"
+        },
+        {
+          "value": "Gagore",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->Gagore"
+        },
+        {
+          "value": "Lakota",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->Lakota"
+        },
+        {
+          "value": "Lakota",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->Lakota"
+        },
+        {
+          "value": "Lakota",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->Lakota->Lakota"
+        },
+        {
+          "value": "NIAMBEZARIA",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->NIAMBEZARIA"
+        },
+        {
+          "value": "Nebo",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->Nebo"
+        },
+        {
+          "value": "Zikisso",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->Zikisso"
+        },
+        {
+          "value": "Zikisso",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->Zikisso"
+        },
+        {
+          "value": "Zikisso",
+          "label": "Cote d'Ivoire->LÔH-DJBOUA->LAKOTA->Zikisso->Zikisso"
+        },
+        {
+          "value": "MARAHOUE",
+          "label": "Cote d'Ivoire->MARAHOUE"
+        },
+        {
+          "value": "BOUAFLE",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE"
+        },
+        {
+          "value": "BEGBESSOU",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE->BEGBESSOU"
+        },
+        {
+          "value": "Bonon",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE->Bonon"
+        },
+        {
+          "value": "Bonon",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE->Bonon->Bonon"
+        },
+        {
+          "value": "Bouaflé",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE->Bouaflé"
+        },
+        {
+          "value": "Bouafle",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE->Bouaflé->Bouafle"
+        },
+        {
+          "value": "Dahiepa-Kehi",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE->Dahiepa-Kehi"
+        },
+        {
+          "value": "N'DOUFFOUKANKRO",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE->N'DOUFFOUKANKRO"
+        },
+        {
+          "value": "PAKOUABO",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE->PAKOUABO"
+        },
+        {
+          "value": "TIBEITA",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE->TIBEITA"
+        },
+        {
+          "value": "Tonla",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE->Tonla"
+        },
+        {
+          "value": "ZAGUIETA",
+          "label": "Cote d'Ivoire->MARAHOUE->BOUAFLE->ZAGUIETA"
+        },
+        {
+          "value": "SINFRA",
+          "label": "Cote d'Ivoire->MARAHOUE->SINFRA"
+        },
+        {
+          "value": "BAZRE",
+          "label": "Cote d'Ivoire->MARAHOUE->SINFRA->BAZRE"
+        },
+        {
+          "value": "KONONFLA",
+          "label": "Cote d'Ivoire->MARAHOUE->SINFRA->KONONFLA"
+        },
+        {
+          "value": "KOUETINFLA",
+          "label": "Cote d'Ivoire->MARAHOUE->SINFRA->KOUETINFLA"
+        },
+        {
+          "value": "Kanoroba",
+          "label": "Cote d'Ivoire->MARAHOUE->SINFRA->Kanoroba"
+        },
+        {
+          "value": "Sinfra",
+          "label": "Cote d'Ivoire->MARAHOUE->SINFRA->Sinfra"
+        },
+        {
+          "value": "Sinfra",
+          "label": "Cote d'Ivoire->MARAHOUE->SINFRA->Sinfra->Sinfra"
+        },
+        {
+          "value": "ZUENOULA",
+          "label": "Cote d'Ivoire->MARAHOUE->ZUENOULA"
+        },
+        {
+          "value": "Gohitafla",
+          "label": "Cote d'Ivoire->MARAHOUE->ZUENOULA->Gohitafla"
+        },
+        {
+          "value": "Gohitafla",
+          "label": "Cote d'Ivoire->MARAHOUE->ZUENOULA->Gohitafla->Gohitafla"
+        },
+        {
+          "value": "IRIEFLA",
+          "label": "Cote d'Ivoire->MARAHOUE->ZUENOULA->IRIEFLA"
+        },
+        {
+          "value": "KANZRA",
+          "label": "Cote d'Ivoire->MARAHOUE->ZUENOULA->KANZRA"
+        },
+        {
+          "value": "MAMINIGUI",
+          "label": "Cote d'Ivoire->MARAHOUE->ZUENOULA->MAMINIGUI"
+        },
+        {
+          "value": "VOUEBOUFLA",
+          "label": "Cote d'Ivoire->MARAHOUE->ZUENOULA->VOUEBOUFLA"
+        },
+        {
+          "value": "ZANZRA",
+          "label": "Cote d'Ivoire->MARAHOUE->ZUENOULA->ZANZRA"
+        },
+        {
+          "value": "Zuénoula",
+          "label": "Cote d'Ivoire->MARAHOUE->ZUENOULA->Zuénoula"
+        },
+        {
+          "value": "Zouenoula",
+          "label": "Cote d'Ivoire->MARAHOUE->ZUENOULA->Zuénoula->Zouenoula"
+        },
+        {
+          "value": "ME",
+          "label": "Cote d'Ivoire->ME"
+        },
+        {
+          "value": "ADZOPE",
+          "label": "Cote d'Ivoire->ME->ADZOPE"
+        },
+        {
+          "value": "ANNEPE",
+          "label": "Cote d'Ivoire->ME->ADZOPE->ANNEPE"
+        },
+        {
+          "value": "ASSIKOI",
+          "label": "Cote d'Ivoire->ME->ADZOPE->ASSIKOI"
+        },
+        {
+          "value": "Adzopé",
+          "label": "Cote d'Ivoire->ME->ADZOPE->Adzopé"
+        },
+        {
+          "value": "Adzope",
+          "label": "Cote d'Ivoire->ME->ADZOPE->Adzopé->Adzope"
+        },
+        {
+          "value": "Agou",
+          "label": "Cote d'Ivoire->ME->ADZOPE->Agou"
+        },
+        {
+          "value": "Agou",
+          "label": "Cote d'Ivoire->ME->ADZOPE->Agou->Agou"
+        },
+        {
+          "value": "BECEDI-BRIGNAN",
+          "label": "Cote d'Ivoire->ME->ADZOPE->BECEDI-BRIGNAN"
+        },
+        {
+          "value": "YAKASSE-ME",
+          "label": "Cote d'Ivoire->ME->ADZOPE->YAKASSE-ME"
+        },
+        {
+          "value": "AKOUPE",
+          "label": "Cote d'Ivoire->ME->AKOUPE"
+        },
+        {
+          "value": "Afféry",
+          "label": "Cote d'Ivoire->ME->AKOUPE->Afféry"
+        },
+        {
+          "value": "Affery",
+          "label": "Cote d'Ivoire->ME->AKOUPE->Afféry->Affery"
+        },
+        {
+          "value": "Akoupé",
+          "label": "Cote d'Ivoire->ME->AKOUPE->Akoupé"
+        },
+        {
+          "value": "Affery",
+          "label": "Cote d'Ivoire->ME->AKOUPE->Akoupé->Affery"
+        },
+        {
+          "value": "Akoupe",
+          "label": "Cote d'Ivoire->ME->AKOUPE->Akoupé->Akoupe"
+        },
+        {
+          "value": "BECOUEFIN",
+          "label": "Cote d'Ivoire->ME->AKOUPE->BECOUEFIN"
+        },
+        {
+          "value": "ALEPE",
+          "label": "Cote d'Ivoire->ME->ALEPE"
+        },
+        {
+          "value": "ABOISSO-COMOE",
+          "label": "Cote d'Ivoire->ME->ALEPE->ABOISSO-COMOE"
+        },
+        {
+          "value": "ALLOSSO",
+          "label": "Cote d'Ivoire->ME->ALEPE->ALLOSSO"
+        },
+        {
+          "value": "Alépé",
+          "label": "Cote d'Ivoire->ME->ALEPE->Alépé"
+        },
+        {
+          "value": "Alepe",
+          "label": "Cote d'Ivoire->ME->ALEPE->Alépé->Alepe"
+        },
+        {
+          "value": "DANGUIRA",
+          "label": "Cote d'Ivoire->ME->ALEPE->DANGUIRA"
+        },
+        {
+          "value": "OGHLWALPO",
+          "label": "Cote d'Ivoire->ME->ALEPE->OGHLWALPO"
+        },
+        {
+          "value": "YAKASSE-ATTOBROU",
+          "label": "Cote d'Ivoire->ME->YAKASSE-ATTOBROU"
+        },
+        {
+          "value": "ABONGOUA",
+          "label": "Cote d'Ivoire->ME->YAKASSE-ATTOBROU->ABONGOUA"
+        },
+        {
+          "value": "BIEBY",
+          "label": "Cote d'Ivoire->ME->YAKASSE-ATTOBROU->BIEBY"
+        },
+        {
+          "value": "Yakassé - Attobrou",
+          "label": "Cote d'Ivoire->ME->YAKASSE-ATTOBROU->Yakassé - Attobrou"
+        },
+        {
+          "value": "Yakasse-Attobrou",
+          "label": "Cote d'Ivoire->ME->YAKASSE-ATTOBROU->Yakassé - Attobrou->Yakasse-Attobrou"
+        },
+        {
+          "value": "MORONOU",
+          "label": "Cote d'Ivoire->MORONOU"
+        },
+        {
+          "value": "ARRAH",
+          "label": "Cote d'Ivoire->MORONOU->ARRAH"
+        },
+        {
+          "value": "Arrah",
+          "label": "Cote d'Ivoire->MORONOU->ARRAH->Arrah"
+        },
+        {
+          "value": "Arrah",
+          "label": "Cote d'Ivoire->MORONOU->ARRAH->Arrah->Arrah"
+        },
+        {
+          "value": "KOTOBI",
+          "label": "Cote d'Ivoire->MORONOU->ARRAH->KOTOBI"
+        },
+        {
+          "value": "KREGBE",
+          "label": "Cote d'Ivoire->MORONOU->ARRAH->KREGBE"
+        },
+        {
+          "value": "BONGOUANOU",
+          "label": "Cote d'Ivoire->MORONOU->BONGOUANOU"
+        },
+        {
+          "value": "ANDE",
+          "label": "Cote d'Ivoire->MORONOU->BONGOUANOU->ANDE"
+        },
+        {
+          "value": "ASSIE-KOUMASSI",
+          "label": "Cote d'Ivoire->MORONOU->BONGOUANOU->ASSIE-KOUMASSI"
+        },
+        {
+          "value": "Bongouanou",
+          "label": "Cote d'Ivoire->MORONOU->BONGOUANOU->Bongouanou"
+        },
+        {
+          "value": "Bongouanou",
+          "label": "Cote d'Ivoire->MORONOU->BONGOUANOU->Bongouanou->Bongouanou"
+        },
+        {
+          "value": "N'GUESSANKRO",
+          "label": "Cote d'Ivoire->MORONOU->BONGOUANOU->N'GUESSANKRO"
+        },
+        {
+          "value": "M'BATTO",
+          "label": "Cote d'Ivoire->MORONOU->M'BATTO"
+        },
+        {
+          "value": "ASSAHARA",
+          "label": "Cote d'Ivoire->MORONOU->M'BATTO->ASSAHARA"
+        },
+        {
+          "value": "Anoumaba",
+          "label": "Cote d'Ivoire->MORONOU->M'BATTO->Anoumaba"
+        },
+        {
+          "value": "Anoumaba",
+          "label": "Cote d'Ivoire->MORONOU->M'BATTO->Anoumaba->Anoumaba"
+        },
+        {
+          "value": "Divo",
+          "label": "Cote d'Ivoire->MORONOU->M'BATTO->Divo"
+        },
+        {
+          "value": "M'Batto",
+          "label": "Cote d'Ivoire->MORONOU->M'BATTO->M'Batto"
+        },
+        {
+          "value": "M'Batto",
+          "label": "Cote d'Ivoire->MORONOU->M'BATTO->M'Batto->M'Batto"
+        },
+        {
+          "value": "Tiémélékro",
+          "label": "Cote d'Ivoire->MORONOU->M'BATTO->Tiémélékro"
+        },
+        {
+          "value": "Tiemelokro",
+          "label": "Cote d'Ivoire->MORONOU->M'BATTO->Tiémélékro->Tiemelokro"
+        },
+        {
+          "value": "N'ZI",
+          "label": "Cote d'Ivoire->N'ZI"
+        },
+        {
+          "value": "BOCADA",
+          "label": "Cote d'Ivoire->N'ZI->BOCADA"
+        },
+        {
+          "value": "BEGANSSOU",
+          "label": "Cote d'Ivoire->N'ZI->BOCADA->BEGANSSOU"
+        },
+        {
+          "value": "BOCADA",
+          "label": "Cote d'Ivoire->N'ZI->BOCADA->BOCADA"
+        },
+        {
+          "value": "Bocada",
+          "label": "Cote d'Ivoire->N'ZI->BOCADA->BOCADA->Bocada"
+        },
+        {
+          "value": "KOUADIOBLEKRO",
+          "label": "Cote d'Ivoire->N'ZI->BOCADA->KOUADIOBLEKRO"
+        },
+        {
+          "value": "N'ZECREZESSOU",
+          "label": "Cote d'Ivoire->N'ZI->BOCADA->N'ZECREZESSOU"
+        },
+        {
+          "value": "BOCANDA",
+          "label": "Cote d'Ivoire->N'ZI->BOCANDA"
+        },
+        {
+          "value": "BENGASSOU",
+          "label": "Cote d'Ivoire->N'ZI->BOCANDA->BENGASSOU"
+        },
+        {
+          "value": "Bocanda",
+          "label": "Cote d'Ivoire->N'ZI->BOCANDA->Bocanda"
+        },
+        {
+          "value": "Dahiri",
+          "label": "Cote d'Ivoire->N'ZI->BOCANDA->Dahiri"
+        },
+        {
+          "value": "KOUADIOBLEKRO",
+          "label": "Cote d'Ivoire->N'ZI->BOCANDA->KOUADIOBLEKRO"
+        },
+        {
+          "value": "N'ZECREZESSOU",
+          "label": "Cote d'Ivoire->N'ZI->BOCANDA->N'ZECREZESSOU"
+        },
+        {
+          "value": "DIMBOKRO",
+          "label": "Cote d'Ivoire->N'ZI->DIMBOKRO"
+        },
+        {
+          "value": "ABIGUI",
+          "label": "Cote d'Ivoire->N'ZI->DIMBOKRO->ABIGUI"
+        },
+        {
+          "value": "DIANGOKRO",
+          "label": "Cote d'Ivoire->N'ZI->DIMBOKRO->DIANGOKRO"
+        },
+        {
+          "value": "Dimbokro",
+          "label": "Cote d'Ivoire->N'ZI->DIMBOKRO->Dimbokro"
+        },
+        {
+          "value": "Dimbokro",
+          "label": "Cote d'Ivoire->N'ZI->DIMBOKRO->Dimbokro->Dimbokro"
+        },
+        {
+          "value": "NOFOU",
+          "label": "Cote d'Ivoire->N'ZI->DIMBOKRO->NOFOU"
+        },
+        {
+          "value": "Pinda-Boroko",
+          "label": "Cote d'Ivoire->N'ZI->DIMBOKRO->Pinda-Boroko"
+        },
+        {
+          "value": "KOUASSI-KOUASSIKRO",
+          "label": "Cote d'Ivoire->N'ZI->KOUASSI-KOUASSIKRO"
+        },
+        {
+          "value": "Kouassi - Kouassikro",
+          "label": "Cote d'Ivoire->N'ZI->KOUASSI-KOUASSIKRO->Kouassi - Kouassikro"
+        },
+        {
+          "value": "Kouassi-Kouassikro",
+          "label": "Cote d'Ivoire->N'ZI->KOUASSI-KOUASSIKRO->Kouassi - Kouassikro->Kouassi-Kouassikro"
+        },
+        {
+          "value": "MEKRO",
+          "label": "Cote d'Ivoire->N'ZI->KOUASSI-KOUASSIKRO->MEKRO"
+        },
+        {
+          "value": "NAWA",
+          "label": "Cote d'Ivoire->NAWA"
+        },
+        {
+          "value": "BUYO",
+          "label": "Cote d'Ivoire->NAWA->BUYO"
+        },
+        {
+          "value": "Buyo",
+          "label": "Cote d'Ivoire->NAWA->BUYO->Buyo"
+        },
+        {
+          "value": "Buyo",
+          "label": "Cote d'Ivoire->NAWA->BUYO->Buyo->Buyo"
+        },
+        {
+          "value": "DAPEOUA",
+          "label": "Cote d'Ivoire->NAWA->BUYO->DAPEOUA"
+        },
+        {
+          "value": "Serihio",
+          "label": "Cote d'Ivoire->NAWA->BUYO->Serihio"
+        },
+        {
+          "value": "GUEYO",
+          "label": "Cote d'Ivoire->NAWA->GUEYO"
+        },
+        {
+          "value": "DABOUYO",
+          "label": "Cote d'Ivoire->NAWA->GUEYO->DABOUYO"
+        },
+        {
+          "value": "Guéyo",
+          "label": "Cote d'Ivoire->NAWA->GUEYO->Guéyo"
+        },
+        {
+          "value": "Gueyo",
+          "label": "Cote d'Ivoire->NAWA->GUEYO->Guéyo->Gueyo"
+        },
+        {
+          "value": "MEAGUI",
+          "label": "Cote d'Ivoire->NAWA->MEAGUI"
+        },
+        {
+          "value": "Méagui",
+          "label": "Cote d'Ivoire->NAWA->MEAGUI->Méagui"
+        },
+        {
+          "value": "OUPOYO",
+          "label": "Cote d'Ivoire->NAWA->MEAGUI->OUPOYO"
+        },
+        {
+          "value": "SOUBRE",
+          "label": "Cote d'Ivoire->NAWA->SOUBRE"
+        },
+        {
+          "value": "Baouhakaha",
+          "label": "Cote d'Ivoire->NAWA->SOUBRE->Baouhakaha"
+        },
+        {
+          "value": "Grand - Zattry",
+          "label": "Cote d'Ivoire->NAWA->SOUBRE->Grand - Zattry"
+        },
+        {
+          "value": "Grand-Zattry",
+          "label": "Cote d'Ivoire->NAWA->SOUBRE->Grand - Zattry->Grand-Zattry"
+        },
+        {
+          "value": "Kiemou",
+          "label": "Cote d'Ivoire->NAWA->SOUBRE->Kiemou"
+        },
+        {
+          "value": "LILIYO",
+          "label": "Cote d'Ivoire->NAWA->SOUBRE->LILIYO"
+        },
+        {
+          "value": "OKROUYO",
+          "label": "Cote d'Ivoire->NAWA->SOUBRE->OKROUYO"
+        },
+        {
+          "value": "Soubré",
+          "label": "Cote d'Ivoire->NAWA->SOUBRE->Soubré"
+        },
+        {
+          "value": "Soubre",
+          "label": "Cote d'Ivoire->NAWA->SOUBRE->Soubré->Soubre"
+        },
+        {
+          "value": "PORO",
+          "label": "Cote d'Ivoire->PORO"
+        },
+        {
+          "value": "DIKODOUGOU",
+          "label": "Cote d'Ivoire->PORO->DIKODOUGOU"
+        },
+        {
+          "value": "BORON",
+          "label": "Cote d'Ivoire->PORO->DIKODOUGOU->BORON"
+        },
+        {
+          "value": "Dikodougou",
+          "label": "Cote d'Ivoire->PORO->DIKODOUGOU->Dikodougou"
+        },
+        {
+          "value": "Dikodougou",
+          "label": "Cote d'Ivoire->PORO->DIKODOUGOU->Dikodougou->Dikodougou"
+        },
+        {
+          "value": "Guiembé",
+          "label": "Cote d'Ivoire->PORO->DIKODOUGOU->Guiembé"
+        },
+        {
+          "value": "Guiembe",
+          "label": "Cote d'Ivoire->PORO->DIKODOUGOU->Guiembé->Guiembe"
+        },
+        {
+          "value": "KORHOGO",
+          "label": "Cote d'Ivoire->PORO->KORHOGO"
+        },
+        {
+          "value": "Abongoua",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Abongoua"
+        },
+        {
+          "value": "Adzope",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Adzope"
+        },
+        {
+          "value": "Affery",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Affery"
+        },
+        {
+          "value": "Agou",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Agou"
+        },
+        {
+          "value": "Akoupe",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Akoupe"
+        },
+        {
+          "value": "Bieby",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Bieby"
+        },
+        {
+          "value": "DASSOUNGBOHO",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->DASSOUNGBOHO"
+        },
+        {
+          "value": "KIEMOU",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->KIEMOU"
+        },
+        {
+          "value": "KOMBOLOKOURA",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->KOMBOLOKOURA"
+        },
+        {
+          "value": "KONI",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->KONI"
+        },
+        {
+          "value": "Kanakoro",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Kanakoro"
+        },
+        {
+          "value": "Kanoroba",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Kanoroba"
+        },
+        {
+          "value": "Karakoro",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Karakoro"
+        },
+        {
+          "value": "Karakoro",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Karakoro->Karakoro"
+        },
+        {
+          "value": "Komborodougou",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Komborodougou"
+        },
+        {
+          "value": "Komborodougou",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Komborodougou->Komborodougou"
+        },
+        {
+          "value": "Korhogo",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Korhogo"
+        },
+        {
+          "value": "Korogho",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Korhogo->Korogho"
+        },
+        {
+          "value": "LATAHA",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->LATAHA"
+        },
+        {
+          "value": "N'GANON",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->N'GANON"
+        },
+        {
+          "value": "NAFOUN",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->NAFOUN"
+        },
+        {
+          "value": "Napiéledougou",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Napiéledougou"
+        },
+        {
+          "value": "Napieledougou",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Napiéledougou->Napieledougou"
+        },
+        {
+          "value": "Niofoin",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Niofoin"
+        },
+        {
+          "value": "Niofoin",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Niofoin->Niofoin"
+        },
+        {
+          "value": "SOHOUO",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->SOHOUO"
+        },
+        {
+          "value": "Sirasso",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Sirasso"
+        },
+        {
+          "value": "Sirasso",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Sirasso->Sirasso"
+        },
+        {
+          "value": "Tioroniaradougou",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Tioroniaradougou"
+        },
+        {
+          "value": "Tioroniagadougou",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Tioroniaradougou->Tioroniagadougou"
+        },
+        {
+          "value": "Yakasse-Attobrou",
+          "label": "Cote d'Ivoire->PORO->KORHOGO->Yakasse-Attobrou"
+        },
+        {
+          "value": "M'BENGUE",
+          "label": "Cote d'Ivoire->PORO->M'BENGUE"
+        },
+        {
+          "value": "BOUGOU",
+          "label": "Cote d'Ivoire->PORO->M'BENGUE->BOUGOU"
+        },
+        {
+          "value": "KATIALI",
+          "label": "Cote d'Ivoire->PORO->M'BENGUE->KATIALI"
+        },
+        {
+          "value": "KATOGO",
+          "label": "Cote d'Ivoire->PORO->M'BENGUE->KATOGO"
+        },
+        {
+          "value": "M'Bengué",
+          "label": "Cote d'Ivoire->PORO->M'BENGUE->M'Bengué"
+        },
+        {
+          "value": "M'Bengue",
+          "label": "Cote d'Ivoire->PORO->M'BENGUE->M'Bengué->M'Bengue"
+        },
+        {
+          "value": "SINEMATIALI",
+          "label": "Cote d'Ivoire->PORO->SINEMATIALI"
+        },
+        {
+          "value": "BAHOUAKAHA",
+          "label": "Cote d'Ivoire->PORO->SINEMATIALI->BAHOUAKAHA"
+        },
+        {
+          "value": "KAGBOLODOUGOU",
+          "label": "Cote d'Ivoire->PORO->SINEMATIALI->KAGBOLODOUGOU"
+        },
+        {
+          "value": "Kombolokoura",
+          "label": "Cote d'Ivoire->PORO->SINEMATIALI->Kombolokoura"
+        },
+        {
+          "value": "Napieoledougou",
+          "label": "Cote d'Ivoire->PORO->SINEMATIALI->Napieoledougou"
+        },
+        {
+          "value": "Sinématiali",
+          "label": "Cote d'Ivoire->PORO->SINEMATIALI->Sinématiali"
+        },
+        {
+          "value": "Sinematiali",
+          "label": "Cote d'Ivoire->PORO->SINEMATIALI->Sinématiali->Sinematiali"
+        },
+        {
+          "value": "SAN-PEDRO",
+          "label": "Cote d'Ivoire->SAN-PEDRO"
+        },
+        {
+          "value": "SAN-PEDRO",
+          "label": "Cote d'Ivoire->SAN-PEDRO->SAN-PEDRO"
+        },
+        {
+          "value": "DOBA",
+          "label": "Cote d'Ivoire->SAN-PEDRO->SAN-PEDRO->DOBA"
+        },
+        {
+          "value": "DOGBO",
+          "label": "Cote d'Ivoire->SAN-PEDRO->SAN-PEDRO->DOGBO"
+        },
+        {
+          "value": "GABIADJI",
+          "label": "Cote d'Ivoire->SAN-PEDRO->SAN-PEDRO->GABIADJI"
+        },
+        {
+          "value": "Grand-Béréby",
+          "label": "Cote d'Ivoire->SAN-PEDRO->SAN-PEDRO->Grand-Béréby"
+        },
+        {
+          "value": "Grand-Bereby",
+          "label": "Cote d'Ivoire->SAN-PEDRO->SAN-PEDRO->Grand-Béréby->Grand-Bereby"
+        },
+        {
+          "value": "San-Pédro",
+          "label": "Cote d'Ivoire->SAN-PEDRO->SAN-PEDRO->San-Pédro"
+        },
+        {
+          "value": "San-Pedro",
+          "label": "Cote d'Ivoire->SAN-PEDRO->SAN-PEDRO->San-Pédro->San-Pedro"
+        },
+        {
+          "value": "TABOU",
+          "label": "Cote d'Ivoire->SAN-PEDRO->TABOU"
+        },
+        {
+          "value": "DAPO-IBOKE",
+          "label": "Cote d'Ivoire->SAN-PEDRO->TABOU->DAPO-IBOKE"
+        },
+        {
+          "value": "DJAMANDIOKE",
+          "label": "Cote d'Ivoire->SAN-PEDRO->TABOU->DJAMANDIOKE"
+        },
+        {
+          "value": "DJIROUTOU",
+          "label": "Cote d'Ivoire->SAN-PEDRO->TABOU->DJIROUTOU"
+        },
+        {
+          "value": "Dapo-Iboke",
+          "label": "Cote d'Ivoire->SAN-PEDRO->TABOU->Dapo-Iboke"
+        },
+        {
+          "value": "Djamandioke",
+          "label": "Cote d'Ivoire->SAN-PEDRO->TABOU->Djamandioke"
+        },
+        {
+          "value": "Grabo",
+          "label": "Cote d'Ivoire->SAN-PEDRO->TABOU->Grabo"
+        },
+        {
+          "value": "Grabo",
+          "label": "Cote d'Ivoire->SAN-PEDRO->TABOU->Grabo->Grabo"
+        },
+        {
+          "value": "OLODIO",
+          "label": "Cote d'Ivoire->SAN-PEDRO->TABOU->OLODIO"
+        },
+        {
+          "value": "Tabou",
+          "label": "Cote d'Ivoire->SAN-PEDRO->TABOU->Tabou"
+        },
+        {
+          "value": "Tabou",
+          "label": "Cote d'Ivoire->SAN-PEDRO->TABOU->Tabou->Tabou"
+        },
+        {
+          "value": "SUD COMOE",
+          "label": "Cote d'Ivoire->SUD COMOE"
+        },
+        {
+          "value": "ABOISSO",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO"
+        },
+        {
+          "value": "ADAOU",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->ADAOU"
+        },
+        {
+          "value": "ADJOUAN",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->ADJOUAN"
+        },
+        {
+          "value": "Aboisso",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Aboisso"
+        },
+        {
+          "value": "Aboisso",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Aboisso->Aboisso"
+        },
+        {
+          "value": "Ayamé",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Ayamé"
+        },
+        {
+          "value": "Ayame",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Ayamé->Ayame"
+        },
+        {
+          "value": "BIANOUAN",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->BIANOUAN"
+        },
+        {
+          "value": "Dioman",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Dioman"
+        },
+        {
+          "value": "Ganaoni",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Ganaoni"
+        },
+        {
+          "value": "Gbelo",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Gbelo"
+        },
+        {
+          "value": "Gouekan",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Gouekan"
+        },
+        {
+          "value": "KOUAKRO",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->KOUAKRO"
+        },
+        {
+          "value": "Kanakono",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Kanakono"
+        },
+        {
+          "value": "Maféré",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Maféré"
+        },
+        {
+          "value": "Mafere",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Maféré->Mafere"
+        },
+        {
+          "value": "Papara",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Papara"
+        },
+        {
+          "value": "Saboudougou",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Saboudougou"
+        },
+        {
+          "value": "Santa 1",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Santa 1"
+        },
+        {
+          "value": "Sarhala 1",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->Sarhala 1"
+        },
+        {
+          "value": "YAOU",
+          "label": "Cote d'Ivoire->SUD COMOE->ABOISSO->YAOU"
+        },
+        {
+          "value": "ADIAKE",
+          "label": "Cote d'Ivoire->SUD COMOE->ADIAKE"
+        },
+        {
+          "value": "ASSINI-MAFIA",
+          "label": "Cote d'Ivoire->SUD COMOE->ADIAKE->ASSINI-MAFIA"
+        },
+        {
+          "value": "Adiaké",
+          "label": "Cote d'Ivoire->SUD COMOE->ADIAKE->Adiaké"
+        },
+        {
+          "value": "Adiake",
+          "label": "Cote d'Ivoire->SUD COMOE->ADIAKE->Adiaké->Adiake"
+        },
+        {
+          "value": "ETOUEBOUE",
+          "label": "Cote d'Ivoire->SUD COMOE->ADIAKE->ETOUEBOUE"
+        },
+        {
+          "value": "Kokoumbo",
+          "label": "Cote d'Ivoire->SUD COMOE->ADIAKE->Kokoumbo"
+        },
+        {
+          "value": "Marandallah",
+          "label": "Cote d'Ivoire->SUD COMOE->ADIAKE->Marandallah"
+        },
+        {
+          "value": "Tie-N'Diekro",
+          "label": "Cote d'Ivoire->SUD COMOE->ADIAKE->Tie-N'Diekro"
+        },
+        {
+          "value": "GRAND BASSAM",
+          "label": "Cote d'Ivoire->SUD COMOE->GRAND BASSAM"
+        },
+        {
+          "value": "BONGO",
+          "label": "Cote d'Ivoire->SUD COMOE->GRAND BASSAM->BONGO"
+        },
+        {
+          "value": "Bonoua",
+          "label": "Cote d'Ivoire->SUD COMOE->GRAND BASSAM->Bonoua"
+        },
+        {
+          "value": "Bonoua",
+          "label": "Cote d'Ivoire->SUD COMOE->GRAND BASSAM->Bonoua->Bonoua"
+        },
+        {
+          "value": "Grand Bassam",
+          "label": "Cote d'Ivoire->SUD COMOE->GRAND BASSAM->Grand Bassam"
+        },
+        {
+          "value": "Grand Bassam",
+          "label": "Cote d'Ivoire->SUD COMOE->GRAND BASSAM->Grand Bassam->Grand Bassam"
+        },
+        {
+          "value": "TIAPOUM",
+          "label": "Cote d'Ivoire->SUD COMOE->TIAPOUM"
+        },
+        {
+          "value": "NOE",
+          "label": "Cote d'Ivoire->SUD COMOE->TIAPOUM->NOE"
+        },
+        {
+          "value": "NOUAMOU",
+          "label": "Cote d'Ivoire->SUD COMOE->TIAPOUM->NOUAMOU"
+        },
+        {
+          "value": "Tiapoum",
+          "label": "Cote d'Ivoire->SUD COMOE->TIAPOUM->Tiapoum"
+        },
+        {
+          "value": "Tiapoum",
+          "label": "Cote d'Ivoire->SUD COMOE->TIAPOUM->Tiapoum->Tiapoum"
+        },
+        {
+          "value": "SUD-COMOE",
+          "label": "Cote d'Ivoire->SUD-COMOE"
+        },
+        {
+          "value": "GRAND-BASSAM",
+          "label": "Cote d'Ivoire->SUD-COMOE->GRAND-BASSAM"
+        },
+        {
+          "value": "Akpassanou",
+          "label": "Cote d'Ivoire->SUD-COMOE->GRAND-BASSAM->Akpassanou"
+        },
+        {
+          "value": "Anianou",
+          "label": "Cote d'Ivoire->SUD-COMOE->GRAND-BASSAM->Anianou"
+        },
+        {
+          "value": "Samanza",
+          "label": "Cote d'Ivoire->SUD-COMOE->GRAND-BASSAM->Samanza"
+        },
+        {
+          "value": "TIAPOUM",
+          "label": "Cote d'Ivoire->SUD-COMOE->TIAPOUM"
+        },
+        {
+          "value": "Bongo",
+          "label": "Cote d'Ivoire->SUD-COMOE->TIAPOUM->Bongo"
+        },
+        {
+          "value": "Bonoua",
+          "label": "Cote d'Ivoire->SUD-COMOE->TIAPOUM->Bonoua"
+        },
+        {
+          "value": "Kouakro",
+          "label": "Cote d'Ivoire->SUD-COMOE->TIAPOUM->Kouakro"
+        },
+        {
+          "value": "TCHOLOGO",
+          "label": "Cote d'Ivoire->TCHOLOGO"
+        },
+        {
+          "value": "FERKESSEDOUGOU",
+          "label": "Cote d'Ivoire->TCHOLOGO->FERKESSEDOUGOU"
+        },
+        {
+          "value": "Ferkéssedougou",
+          "label": "Cote d'Ivoire->TCHOLOGO->FERKESSEDOUGOU->Ferkéssedougou"
+        },
+        {
+          "value": "Ferkessedougou",
+          "label": "Cote d'Ivoire->TCHOLOGO->FERKESSEDOUGOU->Ferkéssedougou->Ferkessedougou"
+        },
+        {
+          "value": "Koumbala",
+          "label": "Cote d'Ivoire->TCHOLOGO->FERKESSEDOUGOU->Koumbala"
+        },
+        {
+          "value": "Koumbala",
+          "label": "Cote d'Ivoire->TCHOLOGO->FERKESSEDOUGOU->Koumbala->Koumbala"
+        },
+        {
+          "value": "TOGONIERE",
+          "label": "Cote d'Ivoire->TCHOLOGO->FERKESSEDOUGOU->TOGONIERE"
+        },
+        {
+          "value": "KONG",
+          "label": "Cote d'Ivoire->TCHOLOGO->KONG"
+        },
+        {
+          "value": "BILIMONO",
+          "label": "Cote d'Ivoire->TCHOLOGO->KONG->BILIMONO"
+        },
+        {
+          "value": "Becouefin",
+          "label": "Cote d'Ivoire->TCHOLOGO->KONG->Becouefin"
+        },
+        {
+          "value": "Kong",
+          "label": "Cote d'Ivoire->TCHOLOGO->KONG->Kong"
+        },
+        {
+          "value": "Kong",
+          "label": "Cote d'Ivoire->TCHOLOGO->KONG->Kong->Kong"
+        },
+        {
+          "value": "NAFANA",
+          "label": "Cote d'Ivoire->TCHOLOGO->KONG->NAFANA"
+        },
+        {
+          "value": "SIKOLO",
+          "label": "Cote d'Ivoire->TCHOLOGO->KONG->SIKOLO"
+        },
+        {
+          "value": "OUANGOLODOUGOU",
+          "label": "Cote d'Ivoire->TCHOLOGO->OUANGOLODOUGOU"
+        },
+        {
+          "value": "Diawala",
+          "label": "Cote d'Ivoire->TCHOLOGO->OUANGOLODOUGOU->Diawala"
+        },
+        {
+          "value": "Diawala",
+          "label": "Cote d'Ivoire->TCHOLOGO->OUANGOLODOUGOU->Diawala->Diawala"
+        },
+        {
+          "value": "KAOUARA",
+          "label": "Cote d'Ivoire->TCHOLOGO->OUANGOLODOUGOU->KAOUARA"
+        },
+        {
+          "value": "Niéllé",
+          "label": "Cote d'Ivoire->TCHOLOGO->OUANGOLODOUGOU->Niéllé"
+        },
+        {
+          "value": "Nielle",
+          "label": "Cote d'Ivoire->TCHOLOGO->OUANGOLODOUGOU->Niéllé->Nielle"
+        },
+        {
+          "value": "Ouangolodougou",
+          "label": "Cote d'Ivoire->TCHOLOGO->OUANGOLODOUGOU->Ouangolodougou"
+        },
+        {
+          "value": "Ouangolodougou",
+          "label": "Cote d'Ivoire->TCHOLOGO->OUANGOLODOUGOU->Ouangolodougou->Ouangolodougou"
+        },
+        {
+          "value": "TOUMOUKORO",
+          "label": "Cote d'Ivoire->TCHOLOGO->OUANGOLODOUGOU->TOUMOUKORO"
+        },
+        {
+          "value": "Zanzra",
+          "label": "Cote d'Ivoire->TCHOLOGO->OUANGOLODOUGOU->Zanzra"
+        },
+        {
+          "value": "Zuenoula",
+          "label": "Cote d'Ivoire->TCHOLOGO->OUANGOLODOUGOU->Zuenoula"
+        },
+        {
+          "value": "TONKPI",
+          "label": "Cote d'Ivoire->TONKPI"
+        },
+        {
+          "value": "BIANKOUMA",
+          "label": "Cote d'Ivoire->TONKPI->BIANKOUMA"
+        },
+        {
+          "value": "BLAPLEU",
+          "label": "Cote d'Ivoire->TONKPI->BIANKOUMA->BLAPLEU"
+        },
+        {
+          "value": "Biankouma",
+          "label": "Cote d'Ivoire->TONKPI->BIANKOUMA->Biankouma"
+        },
+        {
+          "value": "Biankouma",
+          "label": "Cote d'Ivoire->TONKPI->BIANKOUMA->Biankouma->Biankouma"
+        },
+        {
+          "value": "Bounda",
+          "label": "Cote d'Ivoire->TONKPI->BIANKOUMA->Bounda"
+        },
+        {
+          "value": "GBANGBEGOUINE",
+          "label": "Cote d'Ivoire->TONKPI->BIANKOUMA->GBANGBEGOUINE"
+        },
+        {
+          "value": "GOUINE",
+          "label": "Cote d'Ivoire->TONKPI->BIANKOUMA->GOUINE"
+        },
+        {
+          "value": "Gbonné",
+          "label": "Cote d'Ivoire->TONKPI->BIANKOUMA->Gbonné"
+        },
+        {
+          "value": "Gbonne",
+          "label": "Cote d'Ivoire->TONKPI->BIANKOUMA->Gbonné->Gbonne"
+        },
+        {
+          "value": "KPATA",
+          "label": "Cote d'Ivoire->TONKPI->BIANKOUMA->KPATA"
+        },
+        {
+          "value": "SANTA",
+          "label": "Cote d'Ivoire->TONKPI->BIANKOUMA->SANTA"
+        },
+        {
+          "value": "DANANE",
+          "label": "Cote d'Ivoire->TONKPI->DANANE"
+        },
+        {
+          "value": "DALEU",
+          "label": "Cote d'Ivoire->TONKPI->DANANE->DALEU"
+        },
+        {
+          "value": "Danané",
+          "label": "Cote d'Ivoire->TONKPI->DANANE->Danané"
+        },
+        {
+          "value": "Danane",
+          "label": "Cote d'Ivoire->TONKPI->DANANE->Danané->Danane"
+        },
+        {
+          "value": "GBON-HOUYE",
+          "label": "Cote d'Ivoire->TONKPI->DANANE->GBON-HOUYE"
+        },
+        {
+          "value": "KOUAN-HOULE",
+          "label": "Cote d'Ivoire->TONKPI->DANANE->KOUAN-HOULE"
+        },
+        {
+          "value": "MAHAPLEU",
+          "label": "Cote d'Ivoire->TONKPI->DANANE->MAHAPLEU"
+        },
+        {
+          "value": "SEILEU",
+          "label": "Cote d'Ivoire->TONKPI->DANANE->SEILEU"
+        },
+        {
+          "value": "Taoudi",
+          "label": "Cote d'Ivoire->TONKPI->DANANE->Taoudi"
+        },
+        {
+          "value": "ZONNEU",
+          "label": "Cote d'Ivoire->TONKPI->DANANE->ZONNEU"
+        },
+        {
+          "value": "MAN",
+          "label": "Cote d'Ivoire->TONKPI->MAN"
+        },
+        {
+          "value": "BOGOUINE",
+          "label": "Cote d'Ivoire->TONKPI->MAN->BOGOUINE"
+        },
+        {
+          "value": "Chiepo",
+          "label": "Cote d'Ivoire->TONKPI->MAN->Chiepo"
+        },
+        {
+          "value": "Dairo-Didizo",
+          "label": "Cote d'Ivoire->TONKPI->MAN->Dairo-Didizo"
+        },
+        {
+          "value": "FAGNAMPLEU",
+          "label": "Cote d'Ivoire->TONKPI->MAN->FAGNAMPLEU"
+        },
+        {
+          "value": "GBANGBEGOUINE-YATI",
+          "label": "Cote d'Ivoire->TONKPI->MAN->GBANGBEGOUINE-YATI"
+        },
+        {
+          "value": "Goudouko",
+          "label": "Cote d'Ivoire->TONKPI->MAN->Goudouko"
+        },
+        {
+          "value": "LOGOUALE",
+          "label": "Cote d'Ivoire->TONKPI->MAN->LOGOUALE"
+        },
+        {
+          "value": "Logouale",
+          "label": "Cote d'Ivoire->TONKPI->MAN->LOGOUALE->Logouale"
+        },
+        {
+          "value": "Man",
+          "label": "Cote d'Ivoire->TONKPI->MAN->Man"
+        },
+        {
+          "value": "Man",
+          "label": "Cote d'Ivoire->TONKPI->MAN->Man->Man"
+        },
+        {
+          "value": "Niambezaria",
+          "label": "Cote d'Ivoire->TONKPI->MAN->Niambezaria"
+        },
+        {
+          "value": "PODIAGOUINE",
+          "label": "Cote d'Ivoire->TONKPI->MAN->PODIAGOUINE"
+        },
+        {
+          "value": "SANDOUGOU-SOBA",
+          "label": "Cote d'Ivoire->TONKPI->MAN->SANDOUGOU-SOBA"
+        },
+        {
+          "value": "Sangouiné",
+          "label": "Cote d'Ivoire->TONKPI->MAN->Sangouiné"
+        },
+        {
+          "value": "Sangouine",
+          "label": "Cote d'Ivoire->TONKPI->MAN->Sangouiné->Sangouine"
+        },
+        {
+          "value": "YAPLEU",
+          "label": "Cote d'Ivoire->TONKPI->MAN->YAPLEU"
+        },
+        {
+          "value": "ZAGOUE",
+          "label": "Cote d'Ivoire->TONKPI->MAN->ZAGOUE"
+        },
+        {
+          "value": "SIPILOU",
+          "label": "Cote d'Ivoire->TONKPI->SIPILOU"
+        },
+        {
+          "value": "Sipilou",
+          "label": "Cote d'Ivoire->TONKPI->SIPILOU->Sipilou"
+        },
+        {
+          "value": "Sipilou",
+          "label": "Cote d'Ivoire->TONKPI->SIPILOU->Sipilou->Sipilou"
+        },
+        {
+          "value": "YORODOUGOU",
+          "label": "Cote d'Ivoire->TONKPI->SIPILOU->YORODOUGOU"
+        },
+        {
+          "value": "ZIOGOUINE",
+          "label": "Cote d'Ivoire->TONKPI->ZIOGOUINE"
+        },
+        {
+          "value": "ZOUAN-HOUNIEN",
+          "label": "Cote d'Ivoire->TONKPI->ZOUAN-HOUNIEN"
+        },
+        {
+          "value": "BANNEU",
+          "label": "Cote d'Ivoire->TONKPI->ZOUAN-HOUNIEN->BANNEU"
+        },
+        {
+          "value": "Bin-Houyé",
+          "label": "Cote d'Ivoire->TONKPI->ZOUAN-HOUNIEN->Bin-Houyé"
+        },
+        {
+          "value": "Bin-Hounien",
+          "label": "Cote d'Ivoire->TONKPI->ZOUAN-HOUNIEN->Bin-Houyé->Bin-Hounien"
+        },
+        {
+          "value": "GOULALEU",
+          "label": "Cote d'Ivoire->TONKPI->ZOUAN-HOUNIEN->GOULALEU"
+        },
+        {
+          "value": "Gbagbegouine",
+          "label": "Cote d'Ivoire->TONKPI->ZOUAN-HOUNIEN->Gbagbegouine"
+        },
+        {
+          "value": "TEAPLEU",
+          "label": "Cote d'Ivoire->TONKPI->ZOUAN-HOUNIEN->TEAPLEU"
+        },
+        {
+          "value": "YELLEU",
+          "label": "Cote d'Ivoire->TONKPI->ZOUAN-HOUNIEN->YELLEU"
+        },
+        {
+          "value": "Zagoue",
+          "label": "Cote d'Ivoire->TONKPI->ZOUAN-HOUNIEN->Zagoue"
+        },
+        {
+          "value": "Zouan - Hounien",
+          "label": "Cote d'Ivoire->TONKPI->ZOUAN-HOUNIEN->Zouan - Hounien"
+        },
+        {
+          "value": "Zouan-Hounien",
+          "label": "Cote d'Ivoire->TONKPI->ZOUAN-HOUNIEN->Zouan - Hounien->Zouan-Hounien"
+        },
+        {
+          "value": "WORODOUGOU",
+          "label": "Cote d'Ivoire->WORODOUGOU"
+        },
+        {
+          "value": "KANI",
+          "label": "Cote d'Ivoire->WORODOUGOU->KANI"
+        },
+        {
+          "value": "Djibrosso",
+          "label": "Cote d'Ivoire->WORODOUGOU->KANI->Djibrosso"
+        },
+        {
+          "value": "Djibrosso",
+          "label": "Cote d'Ivoire->WORODOUGOU->KANI->Djibrosso->Djibrosso"
+        },
+        {
+          "value": "FADIADOUGOU",
+          "label": "Cote d'Ivoire->WORODOUGOU->KANI->FADIADOUGOU"
+        },
+        {
+          "value": "Kani",
+          "label": "Cote d'Ivoire->WORODOUGOU->KANI->Kani"
+        },
+        {
+          "value": "Kani",
+          "label": "Cote d'Ivoire->WORODOUGOU->KANI->Kani->Kani"
+        },
+        {
+          "value": "Morondo",
+          "label": "Cote d'Ivoire->WORODOUGOU->KANI->Morondo"
+        },
+        {
+          "value": "Morondo",
+          "label": "Cote d'Ivoire->WORODOUGOU->KANI->Morondo->Morondo"
+        },
+        {
+          "value": "Worofla",
+          "label": "Cote d'Ivoire->WORODOUGOU->KANI->Worofla"
+        },
+        {
+          "value": "Worofla",
+          "label": "Cote d'Ivoire->WORODOUGOU->KANI->Worofla->Worofla"
+        },
+        {
+          "value": "SEGUELA",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA"
+        },
+        {
+          "value": "BOBI",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->BOBI"
+        },
+        {
+          "value": "DIARABANA",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->DIARABANA"
+        },
+        {
+          "value": "Dualla",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->Dualla"
+        },
+        {
+          "value": "Dualla",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->Dualla->Dualla"
+        },
+        {
+          "value": "KAMALO",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->KAMALO"
+        },
+        {
+          "value": "Massala",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->Massala"
+        },
+        {
+          "value": "Massala",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->Massala->Massala"
+        },
+        {
+          "value": "Nafoun",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->Nafoun"
+        },
+        {
+          "value": "Sediogo / Gbalekaha",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->Sediogo / Gbalekaha"
+        },
+        {
+          "value": "Sifié",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->Sifié"
+        },
+        {
+          "value": "Sifie",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->Sifié->Sifie"
+        },
+        {
+          "value": "Séguela",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->Séguela"
+        },
+        {
+          "value": "Seguela",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->Séguela->Seguela"
+        },
+        {
+          "value": "WOROFLA",
+          "label": "Cote d'Ivoire->WORODOUGOU->SEGUELA->WOROFLA"
+        }
+      ]
+    },
+    {
+      "field_name": "users",
+      "label": "Utilisateurs",
+      "help_text": "Qui utilise ce jeu de données",
+      "form_snippet": "markdown.html",
+      "form_placeholder": ""
+    },
+    {
+      "field_name": "owner_org",
+      "label": "Organisation",
+      "help_text": "Nom de l'organisation detentrice du jeu de données",
+      "preset": "dataset_organization"
+    },
+    {
+      "field_name": "url",
+      "label": "Site web",
+      "help_text": "Site web de l'organisation detentrice du jeu de données",
+      "form_placeholder": "http://example.com/dataset.json",
+      "display_property": "foaf:homepage",
+      "display_snippet": "link.html"
+    },
+    {
+      "field_name": "maintainer",
+      "label": "Gestionnaire/ Responsable",
+      "help_text": "personne en charge du jeu de données",
+      "form_placeholder": "Joe Bloggs",
+      "display_property": "dc:contributor"
+    },
+    {
+      "field_name": "maintainer_email",
+      "label": "Email du gestionnaire",
+      "help_text": "Addresse mail de la personne en charge",
+      "form_placeholder": "joe@example.com",
+      "display_property": "dc:contributor",
+      "display_snippet": "email.html",
+      "display_email_name_field": "maintainer",
+      "validators": "email_validator"
+    },
+    {
+      "field_name": "maintainer_phone",
+      "label": "Téléphone du gestionnaire",
+      "help_text": "Numéro de téléphone de la personne en charge",
+      "form_placeholder": "",
+      "display_property": "",
+      "form_snippet": "text.html"
+    },
+    {
+      "field_name": "notes",
+      "label": "Contenu",
+      "help_text": "Description la plus complète possible du contenu du jeu de données",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "",
+      "required": "true"
+    },
+    {
+      "field_name": "documentation",
+      "label": "Documentation",
+      "help_text": "documentation du contenu. Par exemple heading des colonne d'un fichier csv",
+      "form_snippet": "markdown.html",
+      "form_placeholder": ""
+    },
+    {
+      "field_name": "time_coverage_from",
+      "label": "Couverture temporelle (début)",
+      "help_text": "zone temporelle couverte par le jeu de données",
+      "preset": "date",
+      "form_snippet": "date.html",
+      "required": "true"
+    },
+    {
+      "field_name": "time_coverage_to",
+      "label": "Couverture temporelle (fin)",
+      "help_text": "zone temporelle couverte par le jeu de données",
+      "help_inline": "true",
+      "preset": "date",
+      "form_snippet": "date.html",
+      "required": "true"
+    },
+    {
+      "field_name": "historical_cover",
+      "label": "Couverture historique",
+      "help_text": "Existe-t-il une archive de différentes versions de l'ensemble de données?",
+      "preset": "select",
+      "choices": [
+        {
+          "value": "historical_cover_yes",
+          "label": "Oui"
+        },
+        {
+          "value": "historical_cover_no",
+          "label": "Non"
+        }
+      ]
+    },
+    {
+      "field_name": "weight",
+      "label": "Taille",
+      "help_text": "nombre d'éléments dans le jeu de données (e.g. ligne de fichier csv)",
+      "form_placeholder": "",
+      "display_property": "",
+      "validators": "ignore_missing int_validator",
+      "form_snippet": "text.html"
+    },
+    {
+      "field_name": "periodicity_of_collection",
+      "label": "Frequence",
+      "help_text": "Fréquence à laquelle le jeu de données est mis à jour",
+      "form_placeholder": "",
+      "display_property": "",
+      "form_snippet": "text.html",
+      "required": "true"
+    },
+    {
+      "field_name": "collection_method",
+      "label": "Méthode de collecte",
+      "help_text": "Comment sont collectées les informations contenues dans le jeu de données. Maintenez la touche Ctrl enfoncée pour effectuer une sélection multiple.",
+      "preset": "multiple_select",
+      "choices": [
+        {
+          "value": "collection_method_numeric_form",
+          "label": "Numeric Form"
+        },
+        {
+          "value": "collection_method_physical_form",
+          "label": "Physical Form"
+        }
+      ]
+    },
+    {
+      "field_name": "creation_date",
+      "label": "Date de création",
+      "help_text": "date à laquelle le première version du jeu de données a été établie",
+      "preset": "date",
+      "form_snippet": "date.html"
+    },
+    {
+      "field_name": "closing_date",
+      "label": "Date de cloture",
+      "help_text": "date à partir de laquelle le jeux de données n'est plus maintenu (l'information n'est plus collectée)",
+      "preset": "date",
+      "form_snippet": "date.html"
+    },
+    {
+      "field_name": "last_update",
+      "label": "Date de la dernière mise à jour",
+      "help_text": "Date de la dernière mise à jour",
+      "help_inline": "true",
+      "preset": "date",
+      "form_snippet": "date.html"
+    },
+    {
+      "field_name": "format",
+      "label": "Format",
+      "help_text": "format du jeu de données",
+      "preset": "multiple_select",
+      "required": "true",
+      "choices": [
+        {
+          "value": "format_JSON",
+          "label": "JSON"
+        },
+        {
+          "value": "format_XML",
+          "label": "XML"
+        },
+        {
+          "value": "format_HTML",
+          "label": "HTML"
+        },
+        {
+          "value": "format_RDF",
+          "label": "RDF"
+        },
+        {
+          "value": "format_GeoTIFF",
+          "label": "GeoTIFF"
+        },
+        {
+          "value": "format_GeoJSON",
+          "label": "GeoJSON"
+        },
+        {
+          "value": "format_ShapeFile",
+          "label": "ShapeFile"
+        },
+        {
+          "value": "format_PDF",
+          "label": "PDF"
+        },
+        {
+          "value": "format_DOC",
+          "label": "DOC"
+        },
+        {
+          "value": "format_PNG",
+          "label": "PNG"
+        },
+        {
+          "value": "format_GIF",
+          "label": "GIF"
+        },
+        {
+          "value": "format_JPEG",
+          "label": "JPEG"
+        },
+        {
+          "value": "format_Excel",
+          "label": "Excel"
+        },
+        {
+          "value": "format_Word",
+          "label": "Word"
+        },
+        {
+          "value": "format_Other",
+          "label": "Other"
+        }
+      ]
+    },
+    {
+      "field_name": "license_id",
+      "label": "Licence",
+      "form_snippet": "license.html",
+      "help_text": "la licence de réutilisation associée au jeu de données s'il y en a une"
+    },
+    {
+      "field_name": "access_level",
+      "label": "Niveau d'accès",
+      "help_text": "qui a accès au jeu de données? Public (le jeux est publié), interne (interne à l'organisation mais sans protection particulière), restreint (nécessite des abilitations particulière)",
+      "preset": "select",
+      "choices": [
+        {
+          "value": "public",
+          "label": "public"
+        },
+        {
+          "value": "interne",
+          "label": "interne"
+        },
+        {
+          "value": "restreint",
+          "label": "restreint"
+        }
+      ]
+    },
+    {
+      "field_name": "personal_data",
+      "label": "Données personnelles",
+      "help_text": "Oui/Non à savoir si le jeu de données contient des informations personnelles qui rentre dans le cadre de la loi de protection des données personnelles",
+      "preset": "select",
+      "choices": [
+        {
+          "value": "personal_yes",
+          "label": "Oui"
+        },
+        {
+          "value": "personal_no",
+          "label": "Non"
+        }
+      ]
+    },
+    {
+      "field_name": "free",
+      "label": "Gratuité",
+      "help_text": "Oui/Non à savoir si le jeu de données est gratuit ou pas",
+      "preset": "select",
+      "choices": [
+        {
+          "value": "free_yes",
+          "label": "Oui"
+        },
+        {
+          "value": "free_no",
+          "label": "Non"
+        }
+      ]
+    },
+    {
+      "field_name": "usages",
+      "label": "Usages",
+      "help_text": "Quelles sont les utilisations actuelles faites du jeu de données?",
+      "form_placeholder": "",
+      "display_property": "",
+      "form_snippet": "text.html"
+    },
+    {
+      "field_name": "opportunities_fo_improvement",
+      "label": "Possibilités d'amélioration",
+      "help_text": "Si oui ou non le gestionnaire a identifié des possibilités d'amélioration des données. Lesquelles?",
+      "form_snippet": "markdown.html",
+      "form_placeholder": ""
+    },
+    {
+      "field_name": "tag_string",
+      "label": "Mots-clés",
+      "help_text": "liste de mots-clé facilitant la rechercher",
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "health, government, agriculture"
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "url",
+      "label": "URL",
+      "preset": "resource_url_upload"
+    },
+    {
+      "field_name": "name",
+      "label": "Name",
+      "form_placeholder": "eg. January 2011 Gold Prices"
+    },
+    {
+      "field_name": "description",
+      "label": "Description",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "Some useful notes about the data"
+    },
+    {
+      "field_name": "format",
+      "label": "Format",
+      "preset": "resource_format_autocomplete"
+    }
+  ]
+}

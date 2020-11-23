@@ -1,0 +1,63 @@
+<footer class="site-footer">
+  <div class="container">
+    {% block footer_content %}
+    <div class="row">
+      <div class="col-md-4 footer-links">
+        <div id="block-contactus" class="block block-block-content block-block-content3b5d3d44-bf3a-404f-bf62-ae1c1c33529f">
+          <h2>Contactez-nous</h2>
+          <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
+            <p>+225 86 61 19 97<br>
+              +225 64 38 82 84<br>
+              <a href="mailto:info@dcdj-ci.org">info@dcdj-ci.org</a><br><a href="mailto:info@sejen.ci">info@sejen.ci</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 footer-links">
+        <nav role="navigation" aria-labelledby="block-dcdj-theme-footer-menu" id="block-dcdj-theme-footer" class="block block-menu navigation menu--footer">
+
+          <h2 class="visually-hidden" id="block-dcdj-theme-footer-menu">Réseaux sociaux</h2>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="https://www.facebook.com/DCDJCI/" class="facebook">Facebook</a>
+            </li>
+            <li class="menu-item">
+              <a href="https://twitter.com/DCDJCI" class="twitter">Twitter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-4 attribution">
+        <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
+          <p>
+            Ce site Web a été réalisé grâce à une subvention octroyée par la population des États-Unis à DCDJ&nbsp;par l'intermédiaire du&nbsp;PEPFAR et du&nbsp;Millennium Challenge Corporation. Les informations fournies sur ce site Web ne sont pas
+            des informations officielles du gouvernement américain et ne représentent pas les points vue&nbsp;ou positions du gouvernement des États-Unis. Les informations contenues sur le site sont mises à jour périodiquement, mais DCDJ ne garantit
+            pas que les informations fournies sur ce site sont correctes, complètes et à jour, et ne peut être tenu pour responsable de son contenu.
+          </p>
+        </div>
+        {% block footer_attribution %}
+          <p>{% trans %}<strong>Powered by</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a>{% endtrans %}</p>
+        {% endblock %}
+        {% block footer_lang %}
+        {% endblock %}
+      </div>
+    </div>
+    <div class="row">
+      <ul class="site-gouv">
+        <div class="list-center">
+          <li><a target="_blank" href="https://donnees.banquemondiale.org/">donnees.banquemondiale.org</a></li>
+          <li><a target="_blank" href="https://www.opengovpartnership.org/">opengovpartnership.org</a></li>
+          <li><a target="_blank" href="https://www.data.gouv.ci/">data.gouv.ci</a></li>
+          <li><a target="_blank" href="https://www.ansut.ci/">ansut.ci</a></li>
+          <li><a target="_blank" href="https://data.worldbank.org/">data.worldbank.org</a></li>
+        </div>
+      </ul>
+    </div>
+    {% endblock %}
+  </div>
+
+  {% block footer_debug %}
+  {% if g.debug %}
+  {% include 'snippets/debug.html' %}
+  {% endif %}
+  {% endblock %}
+</footer>

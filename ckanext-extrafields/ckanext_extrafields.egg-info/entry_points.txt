@@ -1,0 +1,4 @@
+
+        [ckan.plugins]
+        extrafields=ckanext.extrafields.plugin:ExampleIDatasetFormPlugin
+    
